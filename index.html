@@ -1,0 +1,2395 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LuxDrive Motors</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-slate-950 text-white">
+  <header class="bg-slate-900/80 p-4 backdrop-blur-md border-b border-white/10 sticky top-0 z-50 text-white shadow-lg">
+    <section class="max-w-7xl mx-auto px-4 py-2 flex justify-between items-center">
+      <h2 class="text-2xl md:text-3xl font-bold flex-shrink-0">LuxDrive <span class="text-amber-400">Motors</span></h2>
+
+      <nav class="relative flex-1 max-w-2xl mx-8">
+        <ul id="nav-menu" class="hidden absolute left-0 top-full md:static md:flex flex-col md:flex-row gap-2 md:gap-1 text-base md:text-sm bg-gradient-to-b from-slate-950/95 via-slate-950/90 to-slate-950/95 p-6 md:p-0 rounded-b-3xl md:rounded-none shadow-2xl md:shadow-none border border-white/10 md:border-0 backdrop-blur-xl md:backdrop-blur-none md:justify-center">
+          <li class="md:underline decoration-amber-400 underline-offset-4 hover:decoration-amber-800"><a href="index.html" class="block md:inline-block px-3 md:px-2 py-2 rounded-2xl text-white hover:text-amber-300 hover:bg-slate-900/80 md:hover:bg-transparent transition whitespace-nowrap">Home</a></li>
+          <li><a href="#inventory" class="block md:inline-block px-3 md:px-2 py-2 rounded-2xl text-white hover:text-amber-300 hover:bg-slate-900/80 md:hover:bg-transparent transition whitespace-nowrap">Inventory</a></li>
+          <li><a href="about.html" class="block md:inline-block px-3 md:px-2 py-2 rounded-2xl text-white hover:text-amber-300 hover:bg-slate-900/80 md:hover:bg-transparent transition whitespace-nowrap">About Us</a></li>
+          <li><a href="#services" class="block md:inline-block px-3 md:px-2 py-2 rounded-2xl text-white hover:text-amber-300 hover:bg-slate-900/80 md:hover:bg-transparent transition whitespace-nowrap">Services</a></li>
+          <li><a href="#blog" class="block md:inline-block px-3 md:px-2 py-2 rounded-2xl text-white hover:text-amber-300 hover:bg-slate-900/80 md:hover:bg-transparent transition whitespace-nowrap">Blog</a></li>
+          <li><a href="#contact" class="block md:inline-block px-3 md:px-2 py-2 rounded-2xl text-white hover:text-amber-300 hover:bg-slate-900/80 md:hover:bg-transparent transition whitespace-nowrap">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="flex items-center gap-3 flex-shrink-0">
+        <!-- Cart Button -->
+        <button id="cart-btn" class="relative flex items-center gap-2 px-3 md:px-4 py-2 rounded-full border border-amber-400/50 hover:border-amber-400 hover:bg-amber-400/10 transition bg-amber-400/5 text-sm">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+          </svg>
+          <span class="hidden md:inline font-semibold whitespace-nowrap">Cart</span>
+          <span id="cart-count" class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">0</span>
+        </button>
+
+        <button id="menu-toggle" class="md:hidden focus:outline-none">
+          <svg class="hamburger w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+            </path>
+          </svg>
+          <svg class="close w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+            </path>
+          </svg>
+        </button>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section
+      class="flex flex-col-reverse justify-center sm:flex-row px-6 items-center gap-8 mb-14 scroll-mt-40 max-w-7xl mx-auto">
+      <article class="sm:w-1/2">
+        <h3>PREMIUM LUXURY DEALERSHIP</h3>
+        <h1 class="text-4xl font-bold mb-4">Drive Luxury. Own Excellence</h1>
+        <p class="text-lg mb-8">Experience the epitome of luxury and performance with our exclusive collection
+          of
+          high-end vehicles. At LuxDrive, we pride ourselves on offering a curated selection of the finest
+          cars,
+          tailored to meet the desires of discerning automotive enthusiasts.</p>
+
+          <div class="mt-10 flex gap-4  flex-wrap">
+        <a href="#inventory"
+          class="inline-block bg-amber-400 hover:bg-amber-500 text-slate-950 font-bold py-2 px-4 rounded">Explore
+          Our
+          Inventory</a>
+        <a href="#contact "
+          class="inline-block bg-amber-400 hover:bg-amber-500 text-slate-950 font-bold py-2 px-4 rounded">Contact
+          Us</a>
+          </div>
+      </article>
+      <img src="2024 ferrari sf90 stradale.avif" alt="ferrari"
+        class="w-full h-full sm:w-1/2 rounded-lg  mb-14 mt-12 object-cover">
+    </section>
+
+    <section id="inventory">
+      <h3 class="text-amber-400 text-2xl font-bold mb-2 text-center">PREMIUM LUXURY DEALERSHIP</h3>
+      <div class="max-w-7xl mx-auto px-6 py-12">
+        <h1 class="text-4xl font-bold mb-4 text-center">Explore Premium Vehicles Built for Every Drive.</h1>
+        <p class="text-lg mb-8 text-center text-gray-300">Experience the epitome of luxury and performance with
+          our exclusive collection of
+          high-end vehicles. At LuxDrive, we pride ourselves on offering a curated selection of the
+          finest cars, tailored to meet the desires of discerning automotive enthusiasts.</p>
+
+        <!-- Inventory Filters -->
+        <div class="flex flex-wrap gap-3 mt-6">
+          <button class="filter-btn bg-amber-400 text-gray-900 font-semibold px-4 py-2 rounded-full shadow"
+            data-filter="all">
+            All Cars
+          </button>
+          <button
+            class="filter-btn bg-slate-800 text-white font-semibold px-4 py-2 rounded-full border border-white/10 hover:bg-slate-700"
+            data-filter="new">
+            New Cars
+          </button>
+          <button
+            class="filter-btn bg-slate-800 text-white font-semibold px-4 py-2 rounded-full border border-white/10 hover:bg-slate-700"
+            data-filter="used">
+            Used Cars
+          </button>
+          <button
+            class="filter-btn bg-slate-800 text-white font-semibold px-4 py-2 rounded-full border border-white/10 hover:bg-slate-700"
+            data-filter="suv">
+            SUVs
+          </button>
+          <button
+            class="filter-btn bg-slate-800 text-white font-semibold px-4 py-2 rounded-full border border-white/10 hover:bg-slate-700"
+            data-filter="sports">
+            Sports
+          </button>
+          <button
+            class="filter-btn bg-slate-800 text-white font-semibold px-4 py-2 rounded-full border border-white/10 hover:bg-slate-700"
+            data-filter="electric">
+            Electric
+          </button>
+          <button
+            class="filter-btn bg-slate-800 text-white font-semibold px-4 py-2 rounded-full border border-white/10 hover:bg-slate-700"
+            data-filter="sedan">
+            Luxury Sedans
+          </button>
+          <button
+            class="filter-btn bg-slate-800 text-white font-semibold px-4 py-2 rounded-full border border-white/10 hover:bg-slate-700"
+            data-filter="coupe">
+            Coupes
+          </button>
+          <button
+            class="filter-btn bg-slate-800 text-white font-semibold px-4 py-2 rounded-full border border-white/10 hover:bg-slate-700"
+            data-filter="GT">
+            Grand Tourers
+          </button>
+        </div>
+
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+
+          <div class="car-card bg-slate-900 rounded-2xl shadow p-4 transition-all" data-category="new suv">
+            <img src="cadillac escalade.jpeg" alt="Cadillac Escalade" class="rounded-xl mb-3 w-full h-auto aspect-[16/9] object-cover">
+            <h3 class="text-white font-bold text-lg mb-1">2024 Cadillac Escalade Sport</h3>
+            <p class="text-slate-300 text-sm mb-1">120 mi • Automatic • Petrol • 4WD</p>
+            <p class="text-amber-400 font-bold text-xl">$118,500</p>
+            <button class="view-details-btn bg-amber-400 text-slate-950 font-semibold
+                        px-4 py-2 rounded-full hover:bg-amber-300 transition-all" data-modal="Cadillac Escalade"
+              data-label="Luxury SUV" data-title="2024 Cadillac Escalade Sport" data-price="$118,500"
+              data-image="cadillac escalade.jpeg" data-overview="The 2024 Cadillac Escalade Sport is a full-size luxury SUV built for 
+              commanding road presence, refined comfort, and advanced family-oriented utility. With premium materials, a powerful V8 engine, 
+              and a spacious cabin, it delivers executive-level driving with modern technology and unmistakable American luxury."
+              data-condition="New" data-mileage="120mi" data-transmission="Automatic" data-fuel-type="Petrol"
+              data-drivetrain="4WD" data-interior="Jet Black Leather" data-exterior="Obsidian Black"
+              data-engine="6.2L V8" data-power="420 hp" data-zero-sixty="6.1 sec"
+              data-available="Luxury SUV inventory currently in stock and ready for private showroom viewing."
+              data-first-feature="Panoramic sunroof" data-second-feature="38-inch curved OLED display"
+              data-third-feature="Magnetic Ride Control" data-fourth-feature="Premium Leather Seating"
+              data-fifth-feature="Heated and ventilated front Seats" data-sixth-feature="Adaptive Cruise Control"
+              data-seventh-feature="360-Degree surround vision camera"
+              data-eighth-feature="AKG premium audio system">View Details</button>
+            <button class="add-to-cart-btn bg-slate-800 text-amber-400 font-semibold px-4 py-2 rounded-full hover:bg-slate-700 border border-amber-400/50 transition-all mt-2" 
+              data-title="2024 Cadillac Escalade Sport" data-price="118500" data-image="cadillac escalade.jpeg">
+              + Add to Cart
+            </button>
+          </div>
+
+          <div class="car-card bg-slate-900 rounded-2xl shadow p-4 transition-all" data-category="used sedan">
+            <img src="mercedes s500.jpeg" alt="Mercedes S-Class" class="rounded-xl mb-3 w-full h-auto aspect-[16/9] object-cover">
+            <h3 class="text-white font-bold text-lg mb-1">2021 Mercedes-Benz S-Class S500</h3>
+            <p class="text-slate-300 text-sm mb-1">25,000 mi • Automatic • Petrol • RWD</p>
+            <p class="text-amber-400 font-bold text-xl">$85,000</p>
+            <button class="view-details-btn bg-amber-400 text-slate-950 font-semibold
+                        px-4 py-2 rounded-full hover:bg-amber-300 transition-all" data-modal="Mercedes S-Class"
+              data-label="Luxury Sedan" data-title="2021 Mercedes-Benz S-Class S500" data-price="$85,000"
+              data-image="mercedes s500.jpeg"
+              data-overview="The Mercedes-Benx S-Class S500 is the benchmark for executive luxury sedans, offering world-class performance and comfort, 
+              advanced cabin technology, and silky-smooth road manners.
+              It delivers a refined driving experience built around elegance, innovation, and effortless prestige."
+              data-condition="Used" data-mileage="25,000mi" data-transmission="Automatic" data-fuel-type="Petrol"
+              data-drivetrain="RWD" data-interior="Macchiato Beige Nappa Leather" data-exterior="Selenite Grey Metallic"
+              data-engine="3.0L Turbo Inline-6 Mild Hybrid" data-power="429 hp" data-zero-sixty="4.8 sec"
+              data-available="Premium executive sedan now available in curated luxury inventory."
+              data-first-feature="Burmester 3D Audio System" data-second-feature="Executive rear seating comfort"
+              data-third-feature="Ambient interior lighting" data-fourth-feature="MBUX hyperscreen-style interface"
+              data-fifth-feature="Heated and ventilated massage Seats" data-sixth-feature="Air Suspension"
+              data-seventh-feature="Soft-close doors"
+              data-eighth-feature="Advanced driver assistance">View Details</button>
+            <button class="add-to-cart-btn bg-slate-800 text-amber-400 font-semibold px-4 py-2 rounded-full hover:bg-slate-700 border border-amber-400/50 transition-all mt-2" 
+              data-title="2021 Mercedes-Benz S-Class S500" data-price="85000" data-image="mercedes s500.jpeg">
+              + Add to Cart
+            </button>
+          </div>
+
+          <div class="car-card bg-slate-900 rounded-2xl shadow p-4 transition-all" data-category="new electric sports">
+            <img src="cybertruck awd.jpeg" alt="Tesla Cybertruck" class="rounded-xl mb-3 w-full h-auto aspect-[16/9] object-cover">
+            <h3 class="text-white font-bold text-lg mb-1">2024 Tesla Cybertruck AWD</h3>
+            <p class="text-slate-300 text-sm mb-1">0 mi • Automatic • Electric • AWD</p>
+            <p class="text-amber-400 font-bold text-xl">$99,900</p>
+            <button class="view-details-btn bg-amber-400 text-slate-950 font-semibold
+                        px-4 py-2 rounded-full hover:bg-amber-300 transition-all" data-modal="Tesla Cybertruck"
+              data-label="Electric Utility Truck" data-title="2024 Tesla Cybertruck AWD" data-price="$99,900"
+              data-image="cybertruck awd.jpeg"
+              data-overview="The Tesla Cybertruck AWD redefines utility with futuristic styling, impressive electric performance, and rugged capability. 
+               Built for innovation-driven buyers, it combines rapid acceleration, advanced tech integration, and distinctive road presence
+               in a highly unconventional package." data-condition="New" data-mileage="0mi" data-transmission="Automatic" data-fuel-type="Electric"
+              data-drivetrain="AWD" data-interior="Minimlist Black Interior" data-exterior="Stainless Steel Finish"
+              data-engine="" data-battery="123 kWh (kilowatt-hour) lithium-ion battery pack for both the Dual Motor AWD and Tri-Motor Cyberbeast trims." data-power="600+ hp" data-zero-sixty="4.1 sec"
+              data-available="Highly demanded electric inventory with limited allocation."
+              data-first-feature="Steer-by-wire system" data-second-feature="Massive central touchscreen"
+              data-third-feature="Vault-style rear cargo bed" data-fourth-feature="Premium audio system"
+              data-fifth-feature="Full-self driving capability" data-sixth-feature="Adaptive Air Suspension"
+              data-seventh-feature="Ultra-durable exoskeletal design with stainless steel body panels"
+              data-eighth-feature="All-terrain capability">View Details</button>
+            <button class="add-to-cart-btn bg-slate-800 text-amber-400 font-semibold px-4 py-2 rounded-full hover:bg-slate-700 border border-amber-400/50 transition-all mt-2" 
+              data-title="2024 Tesla Cybertruck AWD" data-price="99900" data-image="cybertruck awd.jpeg">
+              + Add to Cart
+            </button>
+          </div>
+
+          <div class="car-card bg-slate-900 rounded-2xl shadow p-4 transition-all" data-category="used suv">
+            <img src="bmw x7.webp" alt="BMW X7" class="rounded-xl mb-3 w-full h-auto aspect-[16/9] object-cover">
+            <h3 class="text-white font-bold text-lg mb-1">2022 BMW X7 xDrive40i</h3>
+            <p class="text-slate-300 text-sm mb-1">15,500 mi • Automatic • Petrol • AWD</p>
+            <p class="text-amber-400 font-bold text-xl">$85,000</p>
+            <button class="view-details-btn bg-amber-400 text-slate-950 font-semibold
+                        px-4 py-2 rounded-full hover:bg-amber-300 transition-all" data-modal="BMW X7"
+              data-label="Executive SUV" data-title="2022 BMW X7 xDrive40i" data-price="$85,000"
+              data-image="bmw x7.webp"
+              data-overview="The BMW X7 xDrive40i blends three-row practicality with flagship BMW refinement.
+              It offers a spacious premium cabin, smooth turbocharged power delivery, and upscale road comfort, makinng
+              it a standout luxury SUV for families and executives seeking both performance and prestige without sacrificing versatility."
+              data-condition="Used" data-mileage="15,500mi" data-transmission="Automatic" data-fuel-type="Petrol"
+              data-drivetrain="AWD" data-interior="Cognac Vernasca Leather" data-exterior="Alpine White"
+              data-engine="3.0L Turbo Inline-6" data-power="375 hp" data-zero-sixty="5.8 sec"
+              data-available="Certified premium pre-owned inventory available for immediate viewing."
+              data-first-feature="Panoramic glass roof" data-second-feature="BMW curved display"
+              data-third-feature="3-row luxury seating" data-fourth-feature="Heated front and rear seats"
+              data-fifth-feature="Parking assistance package" data-sixth-feature="Harman Kardon sound system"
+              data-seventh-feature="Soft-close doors"
+              data-eighth-feature="Adaptive Air Suspension">View Details</button>
+            <button class="add-to-cart-btn bg-slate-800 text-amber-400 font-semibold px-4 py-2 rounded-full hover:bg-slate-700 border border-amber-400/50 transition-all mt-2" 
+              data-title="2022 BMW X7 xDrive40i" data-price="85000" data-image="bmw x7.webp">
+              + Add to Cart
+            </button>
+          </div>
+
+          <div class="car-card bg-slate-900 rounded-2xl shadow p-4 transition-all" data-category="new electric sports GT">
+            <img src="audi e-tron.jpeg" alt="Audi e-tron GT" class="rounded-xl mb-3 w-full h-auto aspect-[16/9] object-cover">
+            <h3 class="text-white font-bold text-lg mb-1">2022 Audi e-tron GT</h3>
+            <p class="text-slate-300 text-sm mb-1">1,200 mi • Automatic • Electric • AWD</p>
+            <p class="text-amber-400 font-bold text-xl">$104,500</p>
+            <button class="view-details-btn bg-amber-400 text-slate-950 font-semibold
+                        px-4 py-2 rounded-full hover:bg-amber-300 transition-all" data-modal="Audi e-tron GT"
+              data-label="Electric Grand Tourer" data-title="2022 Audi e-tron GT" data-price="$104,500"
+              data-image="audi e-tron.jpeg"
+              data-overview="The Audi e-tron GT is a sleek all-electric grand tourer designed for refined speed, silent acceleration,
+              and elegant German craftsmanship. With a low-slung profuile and premium cabin, it offers a luxuriouus electric
+              driving experience that feels both futuristic sophisticated."
+              data-condition="New" data-mileage="1,200mi" data-transmission="Automatic" data-fuel-type="Electric"
+              data-drivetrain="AWD" data-interior="Black Leather with contrast stitching" data-exterior="Daytona Gray Pearl"
+              data-battery="Dual Motor Electric" data-power="522 hp" data-zero-sixty="3.9 sec"
+              data-available="Exclusive electric luxury inventory ready for premium delivery."
+              data-first-feature="Matrix LED lighting" data-second-feature="Audi virtual cockpit"
+              data-third-feature="Heated sport seats" data-fourth-feature="Premium Bang & Olufsen audio"
+              data-fifth-feature="Regenerative Braking system" data-sixth-feature="Fast charging capability"
+              data-seventh-feature="Glass panoramic roof"
+              data-eighth-feature="Adaptive Air Suspension">View Details</button>
+            <button class="add-to-cart-btn bg-slate-800 text-amber-400 font-semibold px-4 py-2 rounded-full hover:bg-slate-700 border border-amber-400/50 transition-all mt-2" 
+              data-title="2022 Audi e-tron GT" data-price="104500" data-image="audi e-tron.jpeg">
+              + Add to Cart
+            </button>
+          </div>
+
+          <div class="car-card bg-slate-900 rounded-2xl shadow p-4 transition-all" data-category="new sports">
+            <img src="lambo hurrican.jpeg" alt="Lamborghini Huracán EVO"
+              class="rounded-xl mb-3 w-full h-auto aspect-[16/9] object-cover">
+            <h3 class="text-white font-bold text-lg mb-1">2023 Lamborghini Huracán EVO</h3>
+            <p class="text-slate-300 text-sm mb-1">8,200 mi • Automatic • Petrol • RWD</p>
+            <p class="text-amber-400 font-bold text-xl">$330,000</p>
+            <button class="view-details-btn bg-amber-400 text-slate-950 font-semibold
+                        px-4 py-2 rounded-full hover:bg-amber-300 transition-all" data-modal="Lamborghini Huracán EVO"
+              data-label="Exotic Supercar" data-title="2023 Lamborghini Huracán EVO" data-price="$330,000"
+              data-image="lambo hurrican.jpeg"
+              data-overview="The Lamborghini Huracán EVO is a naturally aspirated italian supercar engineered fir raw emotion, 
+              razor-sharp handling, and dramatic visual presence. Its V10 powertrain, aggresive aerodynamics, and signature cockpit design 
+              to make it an unforgettable high-performance machine for collectors and driving enthusiasts."
+              data-condition="New" data-mileage="8,200mi" data-transmission="Automatic" data-fuel-type="Petrol"
+              data-drivetrain="RWD" data-interior="Black Alcantara" data-exterior="Arancio Borealis Orange"
+              data-engine="5.2L Naturally Aspirated V10" data-power="631 hp" data-zero-sixty="2.9 sec"
+              data-available="Limited exotic inventory. Private consultation recommended for this high-demand supercar."
+              data-first-feature="Carbon ceramic brakes" data-second-feature="Sport exhaust system"
+              data-third-feature="Lamborghini dynamic steering" data-fourth-feature="Alcantara performance interior"
+              data-fifth-feature="Digital Cockpit display" data-sixth-feature="Carbon fiber trim accents"
+              data-seventh-feature="Lamborghini Piattaforma Inerziale (LPI) system for enhanced handling"
+              data-eighth-feature="Drive mode selector">View Details</button>
+            <button class="add-to-cart-btn bg-slate-800 text-amber-400 font-semibold px-4 py-2 rounded-full hover:bg-slate-700 border border-amber-400/50 transition-all mt-2" 
+              data-title="2023 Lamborghini Huracán EVO" data-price="330000" data-image="lambo hurrican.jpeg">
+              + Add to Cart
+            </button>
+          </div>
+
+          <div class="car-card bg-slate-900 rounded-2xl shadow p-4 transition-all" data-category="new suv">
+            <img src="rolls royce cullinan black badge.jpeg" alt="Rolls-Royce Cullinan Black Badge"
+              class="rounded-xl mb-3 w-full h-auto aspect-[16/9] object-cover">
+            <h3 class="text-white font-bold text-lg mb-1">2023 Rolls-Royce Cullinan Black Badge</h3>
+            <p class="text-slate-300 text-sm mb-1">0 mi • Automatic • Petrol • AWD</p>
+            <p class="text-amber-400 font-bold text-xl">$430,000</p>
+            <button class="view-details-btn bg-amber-400 text-slate-950 font-semibold
+                        px-4 py-2 rounded-full hover:bg-amber-300 transition-all"
+              data-modal="Rolls-Royce Cullinan Black Badge" data-label="Luxury SUV"
+              data-title="2023 Rolls-Royce Cullinan Black Badge" data-price="$430,000"
+              data-image="rolls royce cullinan black badge.jpeg"
+              data-overview="The Rolls-Royce Cullinan Black Badge is the pinnacle of ultra-luxury SUV motoring, combining handcrafted British elegance
+              with serene V12 performance. Built for clients who value effortless prestige, it offers unmatched cabin craftsmanship, commanding stature,
+              and an exceptionally smooth ride, making it the ultimate expression of opulence and exclusivity in the SUV segment."
+              data-condition="New" data-mileage="0mi" data-transmission="Automatic" data-fuel-type="Petrol"
+              data-drivetrain="AWD" data-interior="Seashell & Black Leather" data-exterior="Diamond Black"
+              data-engine="6.75L Twin-Turbo V12" data-power="536 hp" data-zero-sixty="4.9 sec"
+              data-available="Ultra-luxury allocation available by private appointment only."
+              data-first-feature="Handcrafted leather interior" data-second-feature="Starlight headliner with 1,340 fiber-optic lights"
+              data-third-feature="Rolls-Royce umbrella integration" data-fourth-feature="Rear lounge seating with cocktail tables"
+              data-fifth-feature="Bespoke wood veneer trim" data-sixth-feature="Air suspension magic carpet ride"
+              data-seventh-feature="360-degree camera system for effortless maneuvering"
+              data-eighth-feature="Premium rear entertainment">View Details</button>
+            <button class="add-to-cart-btn bg-slate-800 text-amber-400 font-semibold px-4 py-2 rounded-full hover:bg-slate-700 border border-amber-400/50 transition-all mt-2" 
+              data-title="2023 Rolls-Royce Cullinan Black Badge" data-price="430000" data-image="rolls royce cullinan black badge.jpeg">
+              + Add to Cart
+            </button>
+          </div>
+
+          <div class="car-card bg-slate-900 rounded-2xl shadow p-4 transition-all" data-category="new sports coupe">
+            <img src="porsche 911.jpeg" alt="Porsche 911 Carrera" class="rounded-xl mb-3 w-full h-auto aspect-[16/9] object-cover">
+            <h3 class="text-white font-bold text-lg mb-1">2023 Porsche 911 Carrera</h3>
+            <p class="text-slate-300 text-sm mb-1">500 mi • Automatic • Petrol • RWD</p>
+            <p class="text-amber-400 font-bold text-xl">$150,000</p>
+            <button class="view-details-btn bg-amber-400 text-slate-950 font-semibold
+                        px-4 py-2 rounded-full hover:bg-amber-300 transition-all" data-modal="Porsche 911 Carrera"
+              data-label="Sports Coupe" data-title="2023 Porsche 911 Carrera" data-price="$150,000"
+              data-image="porsche 911.jpeg"
+              data-overview="The Porsche 911 Carrera is an icon of precision engineering, balancing everyday usability with unmistakable
+              sports car performance. With its rear-engine layout, timeless design, and engaging driving dynamics, the 911 delivers a 
+              thrilling yet refined experience that has captivated enthusiasts for decades."
+              data-condition="New" data-mileage="500mi" data-transmission="Automatic" data-fuel-type="Petrol"
+              data-drivetrain="RWD" data-interior="Black Leather" data-exterior="GT silver metallic"
+              data-engine="3.0L Twin-Turbo Flat-6" data-power="379 hp" data-zero-sixty="4.0 sec"
+              data-available="Highly sought-after sports car inventory with immediate delivery potential. 
+              Private showroom viewing recommended for this model."
+              data-first-feature="Sport Chrono Package" data-second-feature="Porsche active suspension"
+              data-third-feature="Sport exhaust system" data-fourth-feature="Leather sport seats"
+              data-fifth-feature="LED matrix headlights" data-sixth-feature="Premium Bose audio system"
+              data-seventh-feature="Apple CarPlay and Android Auto integration"
+              data-eighth-feature="Drive mode selector">View Details</button>
+            <button class="add-to-cart-btn bg-slate-800 text-amber-400 font-semibold px-4 py-2 rounded-full hover:bg-slate-700 border border-amber-400/50 transition-all mt-2" 
+              data-title="2023 Porsche 911 Carrera" data-price="150000" data-image="porsche 911.jpeg">
+              + Add to Cart
+            </button>
+          </div>
+
+          <div class="car-card bg-slate-900 rounded-2xl shadow p-4 transition-all" data-category="new sports">
+            <img src="ferrari f8.jpeg" alt="Ferrari F8 Tributo" class="rounded-xl mb-3 w-full h-auto aspect-[16/9] object-cover">
+            <h3 class="text-white font-bold text-lg mb-1">2023 Ferrari F8 Tributo</h3>
+            <p class="text-slate-300 text-sm mb-1">0 mi • Automatic • Petrol • RWD</p>
+            <p class="text-amber-400 font-bold text-xl">$480,000</p>
+            <button class="view-details-btn bg-amber-400 text-slate-950 font-semibold
+                        px-4 py-2 rounded-full hover:bg-amber-300 transition-all" data-modal="Ferrari F8 Tributo"
+              data-label="Mid-Engine Supercar" data-title="2023 Ferrari F8 Tributo" data-price="$480,000"
+              data-image="ferrari f8.jpeg"
+              data-overview="The Ferrari F8 Tributo is a mid-engine supercar that pays homage to the brand's V8 heritage while 
+              delivering blistering performance and aerodynamic excellence.It combines a powerful twin-turbo V8 with advanced aerodynamics 
+              and cutting-edge technology to create an unforgettable driving experience that embodies the spirit of Ferrari's racing legacy."
+              data-condition="New" data-mileage="0mi" data-transmission="Automatic" data-fuel-type="Petrol"
+              data-drivetrain="RWD" data-interior="Black Leather & Alcantara" data-exterior="Rosso Corsa Red"
+              data-engine="3.9L Twin-Turbo V8" data-power="710 hp" data-zero-sixty="2.8 sec"
+              data-available="Rare performance car inventory with limited allocation. Private consultation recommended for this model."
+              data-first-feature="Carbon-fiber driver zone" data-second-feature="Ferrari manettino drive mode selector"
+              data-third-feature="High-performance exhaust note tuning" data-fourth-feature="Carbon ceramic brakes"
+              data-fifth-feature="Premium stitched leather interior" data-sixth-feature="Adaptive suspension"
+              data-seventh-feature="Digital instrument cluster with performance telemetry"
+              data-eighth-feature="Launch control">View Details</button>
+            <button class="add-to-cart-btn bg-slate-800 text-amber-400 font-semibold px-4 py-2 rounded-full hover:bg-slate-700 border border-amber-400/50 transition-all mt-2" 
+              data-title="2023 Ferrari F8 Tributo" data-price="480000" data-image="ferrari f8.jpeg">
+              + Add to Cart
+            </button>
+          </div>
+
+          <div class="car-card bg-slate-900 rounded-2xl shadow p-4 transition-all" data-category="used suv">
+            <img src="lamborgini urus.jpeg" alt="Lamborghini Urus" class="rounded-xl mb-3 w-full h-auto aspect-[16/9] object-cover">
+            <h3 class="text-white font-bold text-lg mb-1">2022 Lamborghini Urus</h3>
+            <p class="text-slate-300 text-sm mb-1">5,000 mi • Automatic • Petrol • AWD</p>
+            <p class="text-amber-400 font-bold text-xl">$260,000</p>
+            <button class="view-details-btn bg-amber-400 text-slate-950 font-semibold
+                        px-4 py-2 rounded-full hover:bg-amber-300 transition-all" data-modal="Lamborghini Urus"
+              data-label="Super SUV" data-title="2022 Lamborghini Urus" data-price="$260,000"
+              data-image="lamborgini urus.jpeg"
+               data-overview="The Lamborghini Urus is a high-performance luxury SUV that combines the aggressive styling and exhilarating 
+               performance of a Lamborghini with the practicality and versatility of an SUV.
+               With its twin-turbo V8 engine, advanced all-wheel-drive system, and striking design, the Urus delivers an unforgettable 
+               driving experience that redefines what an SUV can be."
+              data-condition="Used" data-mileage="5,000mi" data-transmission="Automatic" data-fuel-type="Petrol"
+              data-drivetrain="AWD" data-interior="Black with yellow contrast" data-exterior="Nero Noctis Black"
+              data-engine="4.0L Twin-Turbo V8" data-power="641 hp" data-zero-sixty="3.5 sec"
+              data-available="Exotic SUV inventory available for immediate viewing. Private showroom appointment recommended for this model."
+              data-first-feature="Carbon-fiber interior trim" data-second-feature="Panoramic sunroof"
+               data-third-feature="Lamborghini dynamic steering" data-fourth-feature="Sport exhaust system"
+              data-fifth-feature="Performance drive modes" data-sixth-feature="Premium sound system"
+              data-seventh-feature="Heated and ventilated seats" data-eighth-feature="360-degree camera system"
+              >View Details</button>
+            <button class="add-to-cart-btn bg-slate-800 text-amber-400 font-semibold px-4 py-2 rounded-full hover:bg-slate-700 border border-amber-400/50 transition-all mt-2" 
+              data-title="2022 Lamborghini Urus" data-price="260000" data-image="lamborgini urus.jpeg">
+              + Add to Cart
+            </button>
+          </div>
+
+          <div class="car-card bg-slate-900 rounded-2xl shadow p-4 transition-all" data-category="new electric">
+            <img src="bmw ix.jpeg" alt="BMW iX" class="rounded-xl mb-3 w-full h-auto aspect-[16/9] object-cover">
+            <h3 class="text-white font-bold text-lg mb-1">2026 BMW iX</h3>
+            <p class="text-slate-300 text-sm mb-1">0 mi • Automatic • Electric • AWD</p>
+            <p class="text-amber-400 font-bold text-xl">$98,000</p>
+            <button class="view-details-btn bg-amber-400 text-slate-950 font-semibold
+                        px-4 py-2 rounded-full hover:bg-amber-300 transition-all" data-modal="BMW iX"
+              data-label="Electric Luxury SUV" data-title="2026 BMW iX" data-price="$98,000" data-image="bmw ix.jpeg"
+              data-overview="The BMW iX is a cutting-edge electric luxury SUV that combines futuristic design, advanced technology, and sustainable performance.
+              With its spacious interior, long electric range, and innovative features, the iX offers a premium electric driving experience that redefines 
+              the future of luxury mobility."
+              data-condition="New" data-mileage="0mi" data-transmission="Automatic" data-fuel-type="Electric"
+              data-drivetrain="AWD" data-interior="Castanea Chestnut Interior" data-exterior="Mineral White Metallic"
+               data-battery="Dual Motor Electric" data-power="516 hp" data-zero-sixty="4.4 sec"
+              data-available="Premium electric SUV inventory available for immediate delivery. Private showroom consultation recommended for this model."
+              data-first-feature="Curved BMW digital display" data-second-feature="Panoramic electrochromic roof"
+               data-third-feature="Lounge-style interior seating" data-fourth-feature="Harmon Kardon surround sound system"
+              data-fifth-feature="Fast charging capability" data-sixth-feature="Adaptive Air Suspension"
+              data-seventh-feature="Heated steering and seats" data-eighth-feature="Advanced parking assist">View Details</button>
+            <button class="add-to-cart-btn bg-slate-800 text-amber-400 font-semibold px-4 py-2 rounded-full hover:bg-slate-700 border border-amber-400/50 transition-all mt-2" 
+              data-title="2026 BMW iX" data-price="98000" data-image="bmw ix.jpeg">
+              + Add to Cart
+            </button>
+          </div>
+
+          <div class="car-card bg-slate-900 rounded-2xl shadow p-4 transition-all" data-category="new suv">
+            <img src="audi q8.jpeg" alt="Audi Q8" class="rounded-xl mb-3 w-full h-auto aspect-[16/9] object-cover">
+            <h3 class="text-white font-bold text-lg mb-1">2023 Audi Q8</h3>
+            <p class="text-slate-300 text-sm mb-1">500 mi • Automatic • Petrol • AWD</p>
+            <p class="text-amber-400 font-bold text-xl">$92,500</p>
+            <button class="view-details-btn bg-amber-400 text-slate-950 font-semibold
+                        px-4 py-2 rounded-full hover:bg-amber-300 transition-all" data-modal="Audi Q8" data-label="Luxury coupe SUV"
+              data-title="2023 Audi Q8" data-price="$92,500" data-image="audi q8.jpeg"
+              data-overview="The Audi Q8 combines coupe-inspired styling with luxury SUV versatility, offering a premium cabin, strong
+              road prescence and refined performance. With its advanced technology, spacious interior, and distinctive design, the Q8 delivers a sophisticated 
+              driving experience for those seeking both style and substance in a luxury SUV."
+              data-condition="New" data-mileage="500mi" data-transmission="Automatic" data-fuel-type="Petrol"
+              data-drivetrain="AWD" data-interior="Saiga Beige Leather" data-exterior="Mythos Black Metallic"
+              data-engine="3.0L Turbo V6" data-power="335 hp" data-zero-sixty="5.6 sec"
+              data-available="Luxury coupe SUV inventory available for immediate viewing. Private consultation recommended for this model."
+              data-first-feature="Dual touchscreen MMI interface" data-second-feature="Panoramic glass roof"
+               data-third-feature="Premium leather seating" data-fourth-feature="Power soft-close tailgate"
+              data-fifth-feature="Ambient lighting package" data-sixth-feature="Bang & Olufsen sound system"
+              data-seventh-feature="Quattro all-wheel drive" data-eighth-feature="Adaptive cruise assist">View Details</button>
+            <button class="add-to-cart-btn bg-slate-800 text-amber-400 font-semibold px-4 py-2 rounded-full hover:bg-slate-700 border border-amber-400/50 transition-all mt-2" 
+              data-title="2023 Audi Q8" data-price="92500" data-image="audi q8.jpeg">
+              + Add to Cart
+            </button>
+          </div>
+
+          <div class="car-card bg-slate-900 rounded-2xl shadow p-4 transition-all" data-category="new suv">
+            <img src="mercedes g63.jpeg" alt="Mercedes-Benz G-Class G63"
+              class="rounded-xl mb-3 w-full h-auto aspect-[16/9] object-cover">
+            <h3 class="text-white font-bold text-lg mb-1">2023 Mercedes-Benz G-Class G63 AMG</h3>
+            <p class="text-slate-300 text-sm mb-1">500 mi • Automatic • Petrol • AWD</p>
+            <p class="text-amber-400 font-bold text-xl">$180,000</p>
+            <button class="view-details-btn bg-amber-400 text-slate-950 font-semibold
+                        px-4 py-2 rounded-full hover:bg-amber-300 transition-all"
+              data-modal="Mercedes-Benz G-Class G63" data-label="Performance Luxury SUV" data-title="2023 Mercedes-Benz G-Class G63 AMG"
+              data-price="$180,000" data-image="mercedes g63.jpeg"
+              data-overview="The Mercedes-Benz G-Class G63 is a high-performance luxury SUV that combines iconic off-road capability with opulent design and powerful performance.
+              With its distinctive boxy styling, handcrafted interior, and a roaring V8 engine, the G63 delivers an unforgettable driving experience that blends ruggedness with 
+              refined luxury, making it a standout choice for those seeking both adventure and prestige."
+              data-condition="New" data-mileage="100mi" data-transmission="Automatic" data-fuel-type="Petrol"
+              data-drivetrain="AWD" data-interior="Black Nappa Leather with Red stitching" data-exterior="Obsidian Black"
+              data-engine="4.0L Twin-Turbo AMG V8" data-power="577 hp" data-zero-sixty="4.5 sec"
+              data-first-feature="AMG performance exhaust" data-second-feature="Burmester high-end 3D surround sound system"
+               data-third-feature="Nappa Leather interior" data-fourth-feature="Ambient cabin lighting"
+              data-fifth-feature="Off-road drive modes" data-sixth-feature="Adaptive suspension with adjustable ride height"
+              data-seventh-feature="Heated and ventilated seats" data-eighth-feature="360-degree camera"
+              data-available="High-demand AMG inventory with limited premium stock.">View Details</button>
+              <button class="add-to-cart-btn bg-slate-800 text-amber-400 font-semibold px-4 py-2 rounded-full hover:bg-slate-700 border border-amber-400/50 transition-all mt-2" 
+              data-title="2023 Mercedes-Benz G-Class G63 AMG" data-price="180000" data-image="mercedes g63.jpeg">
+              + Add to Cart
+            </button>
+          </div>
+
+          <div class="car-card bg-slate-900 rounded-2xl shadow p-4 transition-all" data-category="new sedan">
+            <img src="rolls royce phantom.jpeg" alt="Rolls-Royce Phantom"
+              class="rounded-xl mb-3 w-full h-auto aspect-[16/9] object-cover">
+            <h3 class="text-white font-bold text-lg mb-1">2024 Rolls-Royce Phantom</h3>
+            <p class="text-slate-300 text-sm mb-1">0 mi • Automatic • Petrol • RWD</p>
+            <p class="text-amber-400 font-bold text-xl">$580,000</p>
+            <button class="view-details-btn bg-amber-400 text-slate-950 font-semibold
+                        px-4 py-2 rounded-full hover:bg-amber-300 transition-all" data-modal="Rolls-Royce Phantom"
+              data-label="Ultra-Luxury Sedan" data-title="2024 Rolls-Royce Phantom" data-price="$580,000"
+              data-image="rolls royce phantom.jpeg"
+               data-overview="The Rolls-Royce Phantom is the epitome of automotive luxury, offering unparalleled craftsmanship, timeless design, and a serene driving experience.
+               With its hand-built attention to detail, powerful V12 engine, and opulent interior, the Phantom delivers an unmatched level of prestige and comfort, making it the 
+               ultimate choice for those seeking the pinnacle of luxury motoring."
+              data-condition="New" data-mileage="0mi" data-transmission="Automatic" data-fuel-type="Petrol"
+              data-drivetrain="RWD" data-interior="Navy Blue & Ivory Leather" data-exterior="Artic White"
+              data-engine="6.75L Twin-Turbo V12" data-power="563 hp" data-zero-sixty="5.1 sec"
+              data-first-feature="Starlight headliner" data-second-feature="Rear executive lounge seating"
+               data-third-feature="Bespoke wood craftsmanship" data-fourth-feature="Rolls royce rear suite"
+              data-fifth-feature="Champagne cooler option" data-sixth-feature="Magic carpet ride suspension"
+              data-seventh-feature="Hand-finished leather interior" data-eighth-feature="Coach doors"
+              data-available="Available by private viewing and concierge appointment only">View Details</button>
+              <button class="add-to-cart-btn bg-slate-800 text-amber-400 font-semibold px-4 py-2 rounded-full hover:bg-slate-700 border border-amber-400/50 transition-all mt-2" 
+              data-title="2024 Rolls-Royce Phantom" data-price="580000" data-image="rolls royce phantom.jpeg">
+              + Add to Cart
+            </button>
+          </div>
+
+          <div class="car-card bg-slate-900 rounded-2xl shadow p-4 transition-all" data-category="new electric">
+            <img src="tesla model s plaid.jpeg" alt="Tesla Model S Plaid"
+              class="rounded-xl mb-3 w-full h-auto aspect-[16/9] object-cover">
+            <h3 class="text-white font-bold text-lg mb-1">2023 Tesla Model S Plaid</h3>
+            <p class="text-slate-300 text-sm mb-1">0 mi • Automatic • Electric • AWD</p>
+            <p class="text-amber-400 font-bold text-xl">$120,000</p>
+            <button class="view-details-btn bg-amber-400 text-slate-950 font-semibold
+                        px-4 py-2 rounded-full hover:bg-amber-300 transition-all" data-modal="Tesla Model S Plaid"
+              data-label="High-performance EV sedan" data-title="2023 Tesla Model S Plaid" data-price="$120,000"
+              data-image="tesla model s plaid.jpeg"
+               data-overview="The Tesla Model S Plaid is an ultra-fast electric performance sedan that blends executive comfort
+               with extreme straight-line speed. With tri-motor power, cutting-edge software integration, and minimalist luxury,
+               it stands among the most advanced EV sedans on the market."
+              data-condition="New" data-mileage="0mi" data-transmission="Automatic" data-fuel-type="Electric"
+              data-drivetrain="AWD" data-interior="Black premium interior" data-exterior="Pearl white multi-coat"
+              data-battery="Tri-Motor electric" data-power="1,020 hp" data-zero-sixty="1.99 sec"
+              data-first-feature="17-inch cinematic touchscreen" data-second-feature="Full self-steering option"
+               data-third-feature="Yoke steering option" data-fourth-feature="Premium immersive audio"
+              data-fifth-feature="Glass roof" data-sixth-feature="Ultra-fast charging compatibility"
+              data-seventh-feature="Heated and ventilated seats" data-eighth-feature="Rear passenger display"
+              data-available="Premium EV performance inventory with limited immediate allocation.">View Details</button>
+            <button class="add-to-cart-btn bg-slate-800 text-amber-400 font-semibold px-4 py-2 rounded-full hover:bg-slate-700 border border-amber-400/50 transition-all mt-2" 
+              data-title="2023 Tesla Model S Plaid" data-price="120000" data-image="tesla model s plaid.jpeg">
+              + Add to Cart
+            </button>
+          </div>
+
+          <div class="car-card bg-slate-900 rounded-2xl shadow p-4 transition-all" data-category="used sports">
+            <img src="jaguar f type.jpeg" alt="Jaguar F-Type" class="rounded-xl mb-3 w-full h-auto aspect-[16/9] object-cover">
+            <h3 class="text-white font-bold text-lg mb-1">2022 Jaguar F-Type</h3>
+            <p class="text-slate-300 text-sm mb-1">7,500 mi • Automatic • Petrol • RWD</p>
+            <p class="text-amber-400 font-bold text-xl">$80,000</p>
+            <button class="view-details-btn bg-amber-400 text-slate-950 font-semibold
+                        px-4 py-2 rounded-full hover:bg-amber-300 transition-all" data-modal="Jaguar F-Type"
+              data-label="Luxury Sports Coupe" data-title="2022 Jaguar F-Type" data-price="$80,000"
+              data-image="jaguar f type.jpeg"
+               data-overview="The Jaguar F-Type is a British sports coupe that pairs dramatic design with an engaging, refined
+               driving character. Its muscular stance, premium interior, and emotive performance make it a compelling grand
+               touring sports car with timeless appeal. "
+              data-condition="Used" data-mileage="7,500mi" data-transmission="Automatic" data-fuel-type="Petrol"
+              data-drivetrain="RWD" data-interior="Ebony windsor leather" data-exterior="British Racing Green"
+              data-engine="5.0L Supercharged V8" data-power="444 hp" data-zero-sixty="4.4 sec"
+              data-first-feature="Active exhaust system" data-second-feature="LED signature lighting"
+               data-third-feature="Premium leather cabin" data-fourth-feature="Meridian sound system"
+              data-fifth-feature="Configurable drive modes" data-sixth-feature="Digital instrument display"
+              data-seventh-feature="Heated sports seats" data-eighth-feature="Active damping systems"
+              data-available="Elegant performance inventory available for immediate test drive.">View Details</button>
+              <button class="add-to-cart-btn bg-slate-800 text-amber-400 font-semibold px-4 py-2 rounded-full hover:bg-slate-700 border border-amber-400/50 transition-all mt-2" 
+              data-title="2022 Jaguar F-Type" data-price="$80,000"
+              data-image="jaguar f type.jpeg">
+              + Add to Cart
+            </button>
+          </div>
+
+          <div class="car-card bg-slate-900 rounded-2xl shadow p-4 transition-all" data-category="new suv">
+            <img src="bentley bentayga.jpeg" alt="Bentley Bentayga" class="rounded-xl mb-3 w-full h-auto aspect-[16/9] object-cover">
+            <h3 class="text-white font-bold text-lg mb-1">2026 Bentley Bentayga</h3>
+            <p class="text-slate-300 text-sm mb-1">200 mi • Automatic • Petrol • AWD</p>
+            <p class="text-amber-400 font-bold text-xl">$250,000</p>
+            <button class="view-details-btn bg-amber-400 text-slate-950 font-semibold
+                        px-4 py-2 rounded-full hover:bg-amber-300 transition-all" data-modal="Bentley Bentayga"
+              data-label="Ultra-Premium SUV" data-title="2026 Bentley Bentayga" data-price="$250,000"
+              data-image="bentley bentayga.jpeg"
+               data-overview="The 2026 Glacier White Bentayga stands as a peak symbol of automotive prestige and commanding road presence.
+Its whisper-quiet cabin provides unmatched comfort, featuring hand-stitched leathers and sustainable, high-end materials.
+Every detail is engineered for a serene, cloud-like ride that defines the ultimate luxury SUV experience."
+              data-condition="New" data-mileage="200mi" data-transmission="Automatic" data-fuel-type="Petrol"
+              data-drivetrain="AWD" data-interior="Linen & Beluga Leather" data-exterior="Glacier white"
+              data-engine="4.0L Twin-Turbo V8" data-power="542 hp" data-zero-sixty="3.4 sec"
+              data-first-feature="Diamond-quilted leather seats" data-second-feature="Bentley rotating display"
+               data-third-feature="Panoramic roof" data-fourth-feature="Soft-close doors"
+              data-fifth-feature="Naim premium audio system" data-sixth-feature="Air suspension ride comfort"
+              data-seventh-feature="Heated and ventilated seats" data-eighth-feature="Rear seat entertainment"
+              data-available="Luxury SUV allocation available for concierge purchase consultation.">View Details</button>
+               <button class="add-to-cart-btn bg-slate-800 text-amber-400 font-semibold px-4 py-2 rounded-full hover:bg-slate-700 border border-amber-400/50 transition-all mt-2" 
+              data-title="2026 Bentley Bentayga" data-price="250000" data-image="bentley bentayga.jpeg">
+              + Add to Cart
+            </button>
+          </div>
+
+          <div class="car-card bg-slate-900 rounded-2xl shadow p-4 transition-all" data-category="new sports">
+            <img src="2024 ferrari sf90 stradale.avif" alt="Ferrari SF90 Stradale"
+              class="rounded-xl mb-3 w-full h-auto aspect-[16/9] object-cover">
+            <h3 class="text-white font-bold text-lg mb-1">2024 Ferrari SF90 Stradale</h3>
+            <p class="text-slate-300 text-sm mb-1">0 mi • Automatic • Hybrid Hypercar • AWD</p>
+            <p class="text-amber-400 font-bold text-xl  mb-3">$740,000</p>
+            <button class="open-modal bg-amber-400 text-slate-950 font-semibold
+                        px-4 py-2 rounded-full hover:bg-amber-300 transition-all"
+              data-modal="ferrari-sf90-stradale">View Details</button>
+               <button class="add-to-cart-btn bg-slate-800 text-amber-400 font-semibold px-4 py-2 rounded-full hover:bg-slate-700 border border-amber-400/50 transition-all mt-2" 
+              data-title="2024 Ferrari SF90 Stradale" data-price="740000" data-image="2024 ferrari sf90 stradale.avif">
+              + Add to Cart
+            </button>
+          </div>
+
+          <div class="car-card bg-slate-900 rounded-2xl shadow p-4 transition-all" data-category="new sports coupe">
+            <img src="bmw m4.webp" alt="BMW M4 Competition" class="rounded-xl mb-3 w-full h-auto aspect-[16/9] object-cover">
+            <h3 class="text-white font-bold text-lg mb-1">2023 BMW M4 Competition</h3>
+            <p class="text-slate-300 text-sm mb-1">100 mi • Automatic • Petrol • RWD</p>
+            <p class="text-amber-400 font-bold text-xl">$95,000</p>
+            <button class="view-details-btn bg-amber-400 text-slate-950 font-semibold
+                        px-4 py-2 rounded-full hover:bg-amber-300 transition-all" data-modal="BMW M4 Competition"
+              data-label="Performance Coupe" data-title="2023 BMW M4 Competition" data-price="$95,000"
+              data-image="bmw m4.webp"
+              data-overview="The BMW M4 Competition is a high-performance coupe that blends aggresive stylng, track-inspired dynamics,
+              and everyday luxury usability. It delivers strong turbocharged power, a focused cockpit, and signature M engineering
+              for enthusiasts who want both precision and prescence. "
+              data-condition="New" data-mileage="100mi" data-transmission="Automatic" data-fuel-type="Petrol"
+              data-drivetrain="RWD" data-interior="Black Merino Leather" data-exterior="Isle of man green"
+              data-engine="3.0L Twin-Turbo inline-6" data-power="503 hp" data-zero-sixty="3.8 sec"
+              data-first-feature="Carbon roof panel" data-second-feature="M adaptive suspension which enables you to choose freely between comfortable or sport driving styles."
+               data-third-feature="Merino Leather interior" data-fourth-feature="M sport differential which optimizes traction, handling, and cornering stability by continuously varying torque distribution between the rear wheels"
+              data-fifth-feature="Head-up display" data-sixth-feature="Performance drive mode selector"
+              data-seventh-feature="Harman Kardon surround audio" data-eighth-feature="Heated sport bucket seat"
+              data-available="Premium performance coupe inventory ready for immediate delivery.">View Details</button>
+              <button class="add-to-cart-btn bg-slate-800 text-amber-400 font-semibold px-4 py-2 rounded-full hover:bg-slate-700 border border-amber-400/50 transition-all mt-2"
+              data-title="2023 BMW M4 Competition" data-price="95000" data-image="bmw m4.webp">
+              + Add to Cart
+            </button>
+          </div>
+
+          <div class="car-card bg-slate-900 rounded-2xl shadow p-4 transition-all" data-category="new sports GT">
+            <img src="Audi rs7.jpeg" alt="Audi RS7" class="rounded-xl mb-3 w-full h-auto aspect-[16/9] object-cover">
+            <h3 class="text-white font-bold text-lg mb-1">2023 Audi RS7</h3>
+            <p class="text-slate-300 text-sm mb-1">50 mi • Automatic • Petrol • AWD</p>
+            <p class="text-amber-400 font-bold text-xl">$120,000</p>
+            <button class="view-details-btn bg-amber-400 text-slate-950 font-semibold
+                        px-4 py-2 rounded-full hover:bg-amber-300 transition-all" data-modal="Audi RS7"
+              data-label="High-performance luxury Sportback" data-title="2023 Audi RS7" data-price="$120,000" data-image="audi rs7.jpeg"
+              data-overview="The Audi RS7 is a high-performance luxury sportback that combines aggressive speed, executive
+              comfort, and bold fastback styling. It offers super-sedan performance with refined interior quality, making
+              it ideal for buyers who want power without sacrificing everyday sophistication."
+              data-condition="New" data-mileage="50mi" data-transmission="Automatic" data-fuel-type="Petrol"
+              data-drivetrain="AWD" data-interior="Black Valcona Leather" data-exterior="Performance Red"
+              data-engine="4.0L Twin-Turbo V8" data-power="591 hp" data-zero-sixty="3.5 sec"
+              data-first-feature="RS adaptive air suspension" data-second-feature="Bang and olufsen 3D sound."
+               data-third-feature="Valcona leather sport seats" data-fourth-feature="Quattro performance AWD"
+              data-fifth-feature="Dual touchscren MMI" data-sixth-feature="RS sport exhaust"
+              data-seventh-feature="Ambient interior lighting" data-eighth-feature="Carbon fiber trim package"
+              data-available="Executive performance inventory ready for immediate viewing.">View
+              Details</button>
+              <button class="add-to-cart-btn bg-slate-800 text-amber-400 font-semibold px-4 py-2 rounded-full hover:bg-slate-700 border border-amber-400/50 transition-all mt-2"
+              data-title="2023 Audi RS7" data-price="120000" data-image="audi rs7.jpeg">
+              + Add to Cart
+            </button>
+          </div>
+
+          <div class="car-card bg-slate-900 rounded-2xl shadow p-4 transition-all" data-category="new coupe GT">
+            <img src="aston martin db12.jpeg" alt="Aston Martin DB12" class="rounded-xl mb-3 w-full h-auto aspect-[16/9] object-cover">
+            <h3 class="text-white font-bold text-lg mb-1">2023 Aston Martin DB12</h3>
+            <p class="text-slate-300 text-sm mb-1">600 mi • Automatic • Petrol • RWD</p>
+            <p class="text-amber-400 font-bold text-xl">$245,000</p>
+            <button class="view-details-btn bg-amber-400 text-slate-950 font-semibold
+                        px-4 py-2 rounded-full hover:bg-amber-300 transition-all" data-modal="Aston Martin DB12"
+              data-label="Grand Tourer" data-title="2023 Aston Martin DB12" data-price="$245,000"
+              data-image="aston martin db12.jpeg"
+              data-overview="The Aston Martin DB12 represents a new era of grand touring performance, combining handcrafted British luxury
+              with sharp, modern engineering. With its powerful twin-turbo V8, refined interior and elegant exterior design.
+              It delivers a perfect balance of speed, comfort and prestige for long-distance driving."
+              data-condition="New" data-mileage="120mi" data-transmission="Automatic" data-fuel-type="Petrol"
+              data-drivetrain="RWD" data-interior="Obsidian Black Leather" data-exterior="Satin Xenon Grey"
+              data-engine="4.0L Twin-Turbo V8" data-power="671 hp" data-zero-sixty="3.5 sec"
+              data-first-feature="Hand-stitched leather interior" data-second-feature="Drive mode selector."
+               data-third-feature="Heated & Ventilated seats" data-fourth-feature="Digital driver display"
+              data-fifth-feature="Adaptive damping suspension" data-sixth-feature="Sport exhaust system"
+              data-seventh-feature="Carbon fiber trim" data-eighth-feature="Premium Bowers & Wilkins audio"
+              data-available="Exclusive grand touring inventory available for private viewing.">View Details</button>
+              <button class="add-to-cart-btn bg-slate-800 text-amber-400 font-semibold px-4 py-2 rounded-full hover:bg-slate-700 border border-amber-400/50 transition-all mt-2"
+              data-title="2023 Aston Martin DB12" data-price="245000" data-image="aston martin db12.jpeg">
+              + Add to Cart   
+            </button>
+          </div>
+
+          <div class="car-card bg-slate-900 rounded-2xl shadow p-4 transition-all" data-category="used sedan">
+            <img src="lexus ls.jpeg" alt="Lexus LS" class="rounded-xl mb-3 w-full h-auto aspect-[16/9] object-cover">
+            <h3 class="text-white font-bold text-lg mb-1"> 2021 Lexus LS</h3>
+            <p class="text-slate-300 text-sm mb-1">10,400 mi • Automatic • Petrol • RWD</p>
+            <p class="text-amber-400 font-bold text-xl">$72,000</p>
+            <button class="view-details-btn bg-amber-400 text-slate-950 font-semibold
+                        px-4 py-2 rounded-full hover:bg-amber-300 transition-all" data-modal="Lexus LS"
+              data-label="Luxury Sedan" data-title="2021 Lexus LS" data-price="$72,000" data-image="lexus ls.jpeg"
+              data-overview="The 2021 Lexus LS is a flagship luxury sedan designed for comfort, queitness and refined quality.
+              Known for its exceptional build quality and smooth ride, it offers a serene cabin experience with advanced
+              technology and premium cratfsmanship."
+              data-condition="Used" data-mileage="18,000mi" data-transmission="Automatic" data-fuel-type="Petrol"
+              data-drivetrain="RWD" data-interior="Black Leather" data-exterior="White"
+              data-engine="3.5L Twin-Turbo V6" data-power="416 hp" data-zero-sixty="4.6 sec"
+              data-first-feature="Wood trim finish" data-second-feature="Soft-close doors."
+               data-third-feature="Heated & Ventilated seats" data-fourth-feature="Rear comfort package"
+              data-fifth-feature="Adaptive air suspension" data-sixth-feature="Lexus safety system+"
+              data-seventh-feature="Ambient interior lightning" data-eighth-feature="Mark Levinson premium audio"
+              data-available="Premium sedan available for immediate purchase.">View
+              Details</button>
+              <button class="add-to-cart-btn bg-slate-800 text-amber-400 font-semibold px-4 py-2 rounded-full hover:bg-slate-700 border border-amber-400/50 transition-all mt-2"
+              data-title="2021 Lexus LS" data-price="72000" data-image="lexus ls.jpeg">
+              + Add to Cart
+            </button>
+          </div>
+
+          <div class="car-card bg-slate-900 rounded-2xl shadow p-4 transition-all" data-category="new suv">
+            <img src="2024 range rover.jpeg" alt="2024 Range Rover" class="rounded-xl mb-3 w-full h-auto aspect-[16/9] object-cover">
+            <h3 class="text-white font-bold text-lg mb-1">2024 Range Rover Sport</h3>
+            <p class="text-slate-300 text-sm mb-1">1,200 mi • Automatic • Petrol • AWD</p>
+            <p class="text-amber-400 font-bold text-xl">$156,000</p>
+            <button class="view-details-btn bg-amber-400 text-slate-950 font-semibold
+                        px-4 py-2 rounded-full hover:bg-amber-300 transition-all" data-modal="2024 Range Rover"
+              data-label="Luxury Performance Sport" data-title="2024 Range Rover Sport" data-price="$156,000"
+              data-image="2024 range rover.jpeg"
+              data-overview="The 2024 Range Rover Sport blends modern luxury with dynamic performance and off-road capability.
+              With its sleek design, advanced suspension system and premium interior, it delivers a confident driving experience
+              both on the road and across challenging terrain."
+              data-condition="New" data-mileage="80mi" data-transmission="Automatic" data-fuel-type="Petrol"
+              data-drivetrain="AWD" data-interior="Ebony Windsor Leather" data-exterior="White"
+              data-engine="3.0L Turbo Inline-6" data-power="395 hp" data-zero-sixty="5.7 sec"
+              data-first-feature="Terrain Response system" data-second-feature="360-degree surround camera"
+               data-third-feature="Heated & Ventilated seats" data-fourth-feature="Panoramic roof"
+              data-fifth-feature="Adaptive cruise control" data-sixth-feature="Meridian sound system"
+              data-seventh-feature="Air Suspension" data-eighth-feature="Premium leather interior"
+              data-available="Luxury SUV inventory ready for immediate delivery">View Details</button>
+              <button class="add-to-cart-btn bg-slate-800 text-amber-400 font-semibold px-4 py-2 rounded-full hover:bg-slate-700 border border-amber-400/50 transition-all mt-2"
+              data-title="2024 Range Rover Sport" data-price="156000" data-image="2024 range rover.jpeg">
+              + Add to Cart
+            </button>
+          </div>
+
+          <div class="car-card bg-slate-900 rounded-2xl shadow p-4 transition-all" data-category="used coupe GT">
+            <img src="bentley continental gt.jpg" alt="Bentley Continental GT"
+              class="rounded-xl mb-3 w-full h-auto aspect-[16/9] object-cover">
+            <h3 class="text-white font-bold text-lg mb-1"> 2022 Bentley Continental GT</h3>
+            <p class="text-slate-300 text-sm mb-1">6,300 mi • Automatic • Petrol • AWD</p>
+            <p class="text-amber-400 font-bold text-xl">$238,000</p>
+            <button class="view-details-btn bg-amber-400 text-slate-950 font-semibold
+                        px-4 py-2 rounded-full hover:bg-amber-300 transition-all"
+              data-modal="2022 Bentley Continental GT" data-label="Luxury Grand Tourer" data-title="2022 Bentley Continental GT"
+              data-price="$238,000" data-image="bentley continental gt.jpg"
+              data-overview="The 2022 Bentley Continental GT is a luxurious grand tourer that combines handcrafted elegance with
+              powerful performance. Its refined interior, smooth acceleration and timeless design make it a perfect choice for 
+              drivers who want both comfort and commanding presence."
+              data-condition="Used" data-mileage="6,500mi" data-transmission="Automatic" data-fuel-type="Petrol"
+              data-drivetrain="AWD" data-interior="Linen & Beluga Leather" data-exterior="Glacier white"
+              data-engine="4.0L Twin-Turbo V8" data-power="542 hp" data-zero-sixty="3.9 sec"
+              data-first-feature="Diamond-quilted leather seats" data-second-feature="Bentley rotating display."
+               data-third-feature="Heated & Ventilated seats" data-fourth-feature="Naim premium audio"
+              data-fifth-feature="Air suspension" data-sixth-feature="Ambient lighting"
+              data-seventh-feature="Wood veneer trim" data-eighth-feature="Soft-close doors"
+              data-available="Ultra-luxury coupe available for private consultation">View Details</button>
+              <button class="add-to-cart-btn bg-slate-800 text-amber-400 font-semibold px-4 py-2 rounded-full hover:bg-slate-700 border border-amber-400/50 transition-all mt-2"
+              data-title="2022 Bentley Continental GT" data-price="238000" data-image="bentley continental gt.jpg">
+              + Add to Cart
+            </button>
+          </div>
+
+          <div class="car-card bg-slate-900 rounded-2xl shadow p-4 transition-all" data-category="new sedan">
+            <img src="bmw 7 series.jpeg" alt="BMW 7 Series" class="rounded-xl mb-3 w-full h-auto aspect-[16/9] object-cover">
+            <h3 class="text-white font-bold text-lg mb-1"> 2024 BMW 7 Series</h3>
+            <p class="text-slate-300 text-sm mb-1">950 mi • Automatic • Petrol • RWD</p>
+            <p class="text-amber-400 font-bold text-xl">$104,700</p>
+            <button class="view-details-btn bg-amber-400 text-slate-950 font-semibold
+                        px-4 py-2 rounded-full hover:bg-amber-300 transition-all" data-modal="2024 BMW 7 Series"
+              data-label="Executive Luxury Sedan" data-title="2024 BMW 7 Series" data-price="$104,700"
+              data-image="bmw 7 series.jpeg"
+              data-overview="The 2024 BMW 7 Series is a modern flagship sedan that showcases cutting-edge technology,
+              executive comfort and bold  styling. With its spacious interior and advanced digital features, it
+              delivers a refined and immersive luxury experience."
+              data-condition="New" data-mileage="950mi" data-transmission="Automatic" data-fuel-type="Petrol"
+              data-drivetrain="RWD" data-interior="Black merino Leather" data-exterior="White"
+              data-engine="4.0L Twin-Turbo V8" data-power="671 hp" data-zero-sixty="3.5 sec"
+              data-first-feature="Hand-stitched leather interior" data-second-feature="Drive mode selector."
+               data-third-feature="Heated & Ventilated seats" data-fourth-feature="Digital driver display"
+              data-fifth-feature="Adaptive damping suspension" data-sixth-feature="Sport exhaust system"
+              data-seventh-feature="Carbon fiber trim" data-eighth-feature="Premium Bowers & Wilkins audio"
+              data-available="Exclusive grand touring inventory available for private viewing.">View Details</button>
+              <button class="add-to-cart-btn bg-slate-800 text-amber-400 font-semibold px-4 py-2 rounded-full hover:bg-slate-700 border border-amber-400/50 transition-all mt-2"
+              data-title="2024 BMW 7 Series" data-price="104700" data-image="bmw 7 series.jpeg">
+              + Add to Cart
+            </button>
+          </div>
+
+          <div class="car-card bg-slate-900 rounded-2xl shadow p-4 transition-all" data-category="used suv">
+            <img src="2022-porsche-cayenne.webp" alt="Porsche Cayenne" class="rounded-xl mb-3 w-full h-auto aspect-[16/9] object-cover">
+            <h3 class="text-white font-bold text-lg mb-1"> 2022 Porsche Cayenne</h3>
+            <p class="text-slate-300 text-sm mb-1">7,100 mi • Automatic • Petrol • AWD</p>
+            <p class="text-amber-400 font-bold text-xl">$70,000</p>
+            <button class="view-details-btn bg-amber-400 text-slate-950 font-semibold
+                        px-4 py-2 rounded-full hover:bg-amber-300 transition-all" data-modal="2022 Porsche Cayenne"
+              data-label="Performance Luxury SUV" data-title="2022 Porsche Cayenne" data-price="$70,000"
+              data-image="2022-porsche-cayenne.webp"
+              data-overview="The 2022 Porsche Cayenne delivers a sports car performance in a luxury SUV package. With precise handling, strong turbocharged
+              power, and a premium interior, it offers a perfect balance between everyday practicality and performance-focused driving."
+              data-condition="Used" data-mileage="7,100 mi" data-transmission="Automatic" data-fuel-type="Petrol"
+              data-drivetrain="AWD" data-interior="Black Leather" data-exterior="White"
+              data-engine="3.0L Turbo V6" data-power="335 hp" data-zero-sixty="5.9 sec"
+              data-first-feature="Porsche active suspension" data-second-feature="Drive mode selector."
+               data-third-feature="Heated & Ventilated seats" data-fourth-feature="Premium leather interior"
+              data-fifth-feature="Panoramic roof" data-sixth-feature="Bose sound system"
+              data-seventh-feature="Adaptive cruise control" data-eighth-feature="Sport exhaust system"
+              data-available="Performance SUV available for immediate viewing.">View Details</button>
+              <button class="add-to-cart-btn bg-slate-800 text-amber-400 font-semibold px-4 py-2 rounded-full hover:bg-slate-700 border border-amber-400/50 transition-all mt-2"
+              data-title="2022 Porsche Cayenne" data-price="70000" data-image="2022-porsche-cayenne.webp">
+              + Add to Cart
+            </button>
+          </div>
+
+          <div class="car-card bg-slate-900 rounded-2xl shadow p-4 transition-all" data-category="used sedan">
+            <img src="audi a8.jpg" alt="Audi A8" class="rounded-xl mb-3 w-full h-auto aspect-[16/9] object-cover">
+            <h3 class="text-white font-bold text-lg mb-1"> 2021 Audi A8</h3>
+            <p class="text-slate-300 text-sm mb-1">12,100 mi • Automatic • Petrol • AWD</p>
+            <p class="text-amber-400 font-bold text-xl">$96,500</p>
+            <button class="view-details-btn bg-amber-400 text-slate-950 font-semibold
+                        px-4 py-2 rounded-full hover:bg-amber-300 transition-all" data-modal="2021 Audi A8"
+              data-label="Executive Luxury Sedan" data-title="2021 Audi A8" data-price="$96,500" data-image="audi a8.jpg"
+              data-overview="The 2021 Audi A8 is a sophisticated luxury sedan that combines cutting-edge technology, refined comfort and elegant design.
+               With its spacious interior, advanced driver assistance 
+              features and smooth performance, it offers a premium driving experience for those seeking both style and substance."
+              data-condition="Used" data-mileage="12,100 mi" data-transmission="Automatic" data-fuel-type="Petrol"
+              data-drivetrain="AWD" data-interior="Black Valcona Leather" data-exterior="Tango red metallic"
+              data-engine="3.0L Turbo V6" data-power="335 hp" data-zero-sixty="5.6 sec"
+              data-first-feature="Audi virtual cockpit" data-second-feature="Drive mode selector."
+               data-third-feature="Heated & Ventilated seats" data-fourth-feature="360-degree camera system"
+              data-fifth-feature="Adaptive air suspension" data-sixth-feature="Ambient lighting"
+              data-seventh-feature="Executive rear seating" data-eighth-feature="Bang & Olufsen premium audio"
+              data-available="Premium executive sedan ready for immediate delivery.">View
+              Details</button>
+            <button class="add-to-cart-btn bg-slate-800 text-amber-400 font-semibold px-4 py-2 rounded-full hover:bg-slate-700 border border-amber-400/50 transition-all mt-2" 
+              data-title="2021 Audi A8" data-price="96500" data-image="audi a8.jpg">
+              + Add to Cart
+            </button>
+          </div>
+
+          <div class="car-card bg-slate-900 rounded-2xl shadow p-4 transition-all" data-category="new GT">
+            <img src="aston martin superleggera.jpeg" alt="aston martin superleggera" class="rounded-xl mb-3 w-full h-auto aspect-[16/9] object-cover">
+            <h3 class="text-white font-bold text-lg mb-1"> 2023 Aston Martin DBS Superleggera</h3>
+            <p class="text-slate-300 text-sm mb-1">50 mi • Automatic • Petrol • RWD</p>
+            <p class="text-amber-400 font-bold text-xl">$330,000</p>
+            <button class="view-details-btn bg-amber-400 text-slate-950 font-semibold
+                        px-4 py-2 rounded-full hover:bg-amber-300 transition-all" data-modal="2023 Aston Martin DBS Superleggera"
+              data-label="Ultra-Performance Grand Tourer" data-title="2023 Aston Martin DBS Superleggera" 
+              data-price="$330,000" data-image="aston martin superleggera.jpeg"
+               data-overview="The 2023 Aston Martin DBS Superleggera is an Ultra-performance grand tourer that blends aggresive power with refined 
+               British luxury. Designed for high-speed cruising and dramatic prescence, it delivers immense V12 performance while maintaining
+               the elegance and comfort expected from Aston Martin's flagship performance lineup."
+              data-condition="New" data-mileage="50mi" data-transmission="Automatic" data-fuel-type="Petrol"
+              data-drivetrain="RWD" data-interior="Obsidian Black Leather" data-exterior="Lightning Silver"
+              data-engine="5.2L Twin-Turbo V12" data-power="715 hp" data-zero-sixty="3.4 sec"
+              data-first-feature="Carbon fiber body accents" data-second-feature="Drive mode selector."
+               data-third-feature="Heated & Ventilated seats" data-fourth-feature="Digital driver display"
+              data-fifth-feature="Adaptive damping suspension" data-sixth-feature="Sport exhaust system"
+              data-seventh-feature="Handcrafted leather interior" data-eighth-feature="Premium Bang & Olufsen audio"
+              data-available="Ultra-performance grand tourer available for exclusive viewing.">View
+              Details</button>
+            <button class="add-to-cart-btn bg-slate-800 text-amber-400 font-semibold px-4 py-2 rounded-full hover:bg-slate-700 border border-amber-400/50 transition-all mt-2" 
+              data-title="2023 Aston Martin DBS Superleggera" data-price="330000" data-image="aston martin superleggera.jpeg">
+              + Add to Cart
+            </button>
+          </div>
+
+          <div class="car-card bg-slate-900 rounded-2xl shadow p-4 transition-all" data-category="new SUV">
+            <img src="ferrari purosangue.jpg" alt="ferrari purosangue" class="rounded-xl mb-3 w-full h-auto aspect-[16/9] object-cover">
+            <h3 class="text-white font-bold text-lg mb-1"> 2026 Ferrari Purosangue</h3>
+            <p class="text-slate-300 text-sm mb-1">20 mi • Automatic • Petrol • AWD</p>
+            <p class="text-amber-400 font-bold text-xl">$1,263,978</p>
+            <button class="view-details-btn bg-amber-400 text-slate-950 font-semibold
+                        px-4 py-2 rounded-full hover:bg-amber-300 transition-all" data-modal="2024 Ferrari Purosangue"
+              data-label="Luxury Performance SUV" data-title="2026 Ferrari Purosangue" data-price="$1,263,978" data-image="ferrari purosangue.jpg">View
+              Details</button>
+            <button class="add-to-cart-btn bg-slate-800 text-amber-400 font-semibold px-4 py-2 rounded-full hover:bg-slate-700 border border-amber-400/50 transition-all mt-2" 
+              data-title="2026 Ferrari Purosangue" data-price="1263978" data-image="ferrari purosangue.jpg">
+              + Add to Cart
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <!--Button-->
+      <div class="text-center mt-5 place-items-center">
+        <button id="toggleCarsBtn"
+          class="px-8 py-3 rounded-full border border-white/30 hover:bg-white hover:text-black transition duration-300 font-medium">
+          Show More
+        </button>
+      </div>
+
+
+      <!-- Modal for Ferrari SF90 Stradale -->
+      <div id="ferrari-sf90-stradale"
+        class="modal fixed inset-0 hidden items-center justify-center bg-black/70 backdrop-blur-md z-50 px-4">
+        <!-- Click outside closes modal -->
+        <div class="modal-overlay absolute inset-0"></div>
+
+        <!-- Modal Box -->
+        <div
+          class="relative z-10 w-full max-w-5xl max-h-[90vh] bg-slate-950 border border-white/10 rounded-3xl shadow-2xl overflow-hidden transform transition-all duration-300 scale-95 opacity-0 modal-content">
+
+          <!-- Close Button -->
+          <button
+            class="close-modal absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-white text-2xl flex items-center justify-center transition-all">
+            &times;
+          </button>
+
+          <!-- SCROLLABLE INSIDE CONTENT ONLY -->
+          <div class="max-h-[90vh] overflow-y-auto">
+
+            <!-- Top Image -->
+            <div class="relative">
+              <img src="2024 ferrari sf90 stradale.avif" alt="Ferrari SF90 Stradale"
+                class="w-full h-72 md:h-[420px] object-cover">
+
+              <!-- Dark gradient overlay -->
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+
+              <!-- Car title on image -->
+              <div class="absolute bottom-6 left-6 right-6">
+                <p class="text-amber-400 text-sm uppercase tracking-[0.2em] font-semibold mb-2">
+                  Hybrid Hypercar
+                </p>
+                <h2 class="text-white text-3xl md:text-5xl font-bold leading-tight">
+                  2024 Ferrari SF90 Stradale
+                </h2>
+                <p class="text-amber-400 text-2xl md:text-3xl font-bold mt-3">
+                  $740,000
+                </p>
+              </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="p-6 md:p-8 lg:p-10">
+
+              <!-- Short Description -->
+              <div class="mb-8">
+                <h3 class="text-white text-xl md:text-2xl font-semibold mb-3">Overview</h3>
+                <p class="text-slate-300 leading-relaxed text-sm md:text-base">
+                  The Ferrari SF90 Stradale is Ferrari's groundbreaking plug-in hybrid supercar,
+                  delivering nearly 1,000 horsepower through a twin-turbo V8 and electric motors.
+                  It combines explosive acceleration, all-wheel-drive confidence, futuristic aerodynamics,
+                  and unmistakable Ferrari styling for an elite performance experience.
+                </p>
+              </div>
+
+              <!-- Specs Grid -->
+              <div class="mb-10">
+                <h3 class="text-white text-xl md:text-2xl font-semibold mb-4">Key Specifications</h3>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                  <div class="bg-slate-900 border border-white/10 rounded-2xl p-4">
+                    <p class="text-slate-400 text-xs uppercase tracking-wide">Condition</p>
+                    <p class="text-white font-semibold mt-2">New</p>
+                  </div>
+
+                  <div class="bg-slate-900 border border-white/10 rounded-2xl p-4">
+                    <p class="text-slate-400 text-xs uppercase tracking-wide">Mileage</p>
+                    <p class="text-white font-semibold mt-2">18 mi</p>
+                  </div>
+
+                  <div class="bg-slate-900 border border-white/10 rounded-2xl p-4">
+                    <p class="text-slate-400 text-xs uppercase tracking-wide">Transmission</p>
+                    <p class="text-white font-semibold mt-2">Automatic</p>
+                  </div>
+
+                  <div class="bg-slate-900 border border-white/10 rounded-2xl p-4">
+                    <p class="text-slate-400 text-xs uppercase tracking-wide">Fuel Type</p>
+                    <p class="text-white font-semibold mt-2">Hybrid</p>
+                  </div>
+
+                  <div class="bg-slate-900 border border-white/10 rounded-2xl p-4">
+                    <p class="text-slate-400 text-xs uppercase tracking-wide">Drivetrain</p>
+                    <p class="text-white font-semibold mt-2">AWD</p>
+                  </div>
+
+                  <div class="bg-slate-900 border border-white/10 rounded-2xl p-4">
+                    <p class="text-slate-400 text-xs uppercase tracking-wide">Exterior</p>
+                    <p class="text-white font-semibold mt-2">Bianco Avus White with Rosso Accents.</p>
+                  </div>
+
+                  <div class="bg-slate-900 border border-white/10 rounded-2xl p-4">
+                    <p class="text-slate-400 text-xs uppercase tracking-wide">Engine</p>
+                    <p class="text-white font-semibold mt-2">4.0L Twin-Turbo V8</p>
+                  </div>
+
+                  <div class="bg-slate-900 border border-white/10 rounded-2xl p-4">
+                    <p class="text-slate-400 text-xs uppercase tracking-wide">Power</p>
+                    <p class="text-white font-semibold mt-2">986 hp</p>
+                  </div>
+
+                  <div class="bg-slate-900 border border-white/10 rounded-2xl p-4">
+                    <p class="text-slate-400 text-xs uppercase tracking-wide">0–60 mph</p>
+                    <p class="text-white font-semibold mt-2">2.5 sec</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Features -->
+              <div class="mb-10">
+                <h3 class="text-white text-xl md:text-2xl font-semibold mb-4">Premium Features</h3>
+
+                <div class="grid md:grid-cols-2 gap-3">
+                  <div class="bg-slate-900/70 border border-white/10 rounded-xl px-4 py-3 text-slate-300">Carbon fiber
+                    aerodynamic package</div>
+                  <div class="bg-slate-900/70 border border-white/10 rounded-xl px-4 py-3 text-slate-300">Adaptive
+                    suspension system</div>
+                  <div class="bg-slate-900/70 border border-white/10 rounded-xl px-4 py-3 text-slate-300">Premium
+                    Alcantara & leather interior</div>
+                  <div class="bg-slate-900/70 border border-white/10 rounded-xl px-4 py-3 text-slate-300">Digital driver
+                    display cluster</div>
+                  <div class="bg-slate-900/70 border border-white/10 rounded-xl px-4 py-3 text-slate-300">Performance
+                    hybrid drive system</div>
+                  <div class="bg-slate-900/70 border border-white/10 rounded-xl px-4 py-3 text-slate-300">Advanced
+                    traction & launch control</div>
+                </div>
+              </div>
+
+              <!-- Availability -->
+              <div class="mb-10">
+                <div class="bg-amber-400/10 border border-amber-400/20 rounded-2xl p-5">
+                  <p class="text-amber-400 text-sm font-semibold uppercase tracking-wide mb-2">Availability</p>
+                  <p class="text-white text-lg font-semibold">Available Now</p>
+                  <p class="text-slate-400 text-sm mt-2">
+                    Limited premium allocation. Contact our performance team for viewing and reservation.
+                  </p>
+                </div>
+              </div>
+
+              <!-- CTA Buttons -->
+              <div class="flex flex-col sm:flex-row gap-4 pb-6">
+                <button
+                  class="bg-amber-400 text-slate-950 font-semibold px-6 py-3 rounded-full hover:bg-amber-300 transition-all">
+                  Book a Test Drive
+                </button>
+
+                <button
+                  class="border border-white/15 text-white font-semibold px-6 py-3 rounded-full hover:bg-white/5 transition-all">
+                  Contact Sales
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Reusable Modal - OUTSIDE section for proper fixed positioning -->
+    <div id="carModal"
+      class="carModal fixed inset-0 hidden items-center justify-center bg-black/70 backdrop-blur-md z-50 px-4">
+      <!-- Click outside closes modal -->
+      <div class="modal-overlay absolute inset-0 cursor-pointer z-0"></div>
+
+      <!-- Modal Box -->
+      <div
+        class="modal-content relative z-10 w-full max-w-5xl max-h-[90vh] bg-slate-950 border border-white/10 rounded-3xl shadow-2xl overflow-hidden transform transition-all duration-300 scale-95 opacity-0">
+
+        <!-- Close Button -->
+        <button
+          class="close-modal absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-white text-2xl flex items-center justify-center transition-all">
+          &times;
+        </button>
+
+        <!-- SCROLLABLE INSIDE CONTENT ONLY -->
+        <div class="max-h-[90vh] overflow-y-auto">
+
+          <!-- Top Image -->
+          <div class="relative">
+            <img id="modalMainImage" src="" alt="Car Image" class="w-full h-72 md:h-[420px] object-cover">
+
+            <!-- Dark gradient overlay -->
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+
+            <!-- Car title on image -->
+            <div class="absolute bottom-6 left-6 right-6">
+              <p class="text-amber-400 text-sm uppercase tracking-[0.2em] font-semibold mb-2" id="modalLabel">
+
+              </p>
+              <h2 class="text-white text-3xl md:text-5xl font-bold leading-tight" id="modalTitle">
+
+              </h2>
+              <p class="text-amber-400 text-2xl md:text-3xl font-bold mt-3" id="modalPrice">
+
+              </p>
+            </div>
+          </div>
+
+          <!-- Main Content -->
+          <div class="p-6 md:p-8 lg:p-10">
+
+            <!-- Short Description -->
+            <div class="mb-8">
+              <h3 class="text-white text-xl md:text-2xl font-semibold mb-3">Overview</h3>
+              <p class="text-slate-300 leading-relaxed text-sm md:text-base" id="modalOverview">
+
+              </p>
+            </div>
+
+            <!-- Specs Grid -->
+            <div class="mb-10">
+              <h3 class="text-white text-xl md:text-2xl font-semibold mb-4">Key Specifications</h3>
+
+              <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="bg-slate-900 border border-white/10 rounded-2xl p-4">
+                  <p class="text-slate-400 text-xs uppercase tracking-wide">Condition</p>
+                  <p class="text-white font-semibold mt-2" id="modalCondition">
+
+                  </p>
+                </div>
+
+                <div class="bg-slate-900 border border-white/10 rounded-2xl p-4">
+                  <p class="text-slate-400 text-xs uppercase tracking-wide">Mileage</p>
+                  <p class="text-white font-semibold mt-2" id="modalMileage">
+
+                  </p>
+                </div>
+
+                <div class="bg-slate-900 border border-white/10 rounded-2xl p-4">
+                  <p class="text-slate-400 text-xs uppercase tracking-wide">Transmission</p>
+                  <p class="text-white font-semibold mt-2" id="modalTransmission">
+
+                  </p>
+                </div>
+
+                <div class="bg-slate-900 border border-white/10 rounded-2xl p-4">
+                  <p class="text-slate-400 text-xs uppercase tracking-wide">Fuel Type</p>
+                  <p class="text-white font-semibold mt-2" id="modalFuelType">
+
+                  </p>
+                </div>
+
+                <div class="bg-slate-900 border border-white/10 rounded-2xl p-4">
+                  <p class="text-slate-400 text-xs uppercase tracking-wide">Drivetrain</p>
+                  <p class="text-white font-semibold mt-2" id="modalDrivetrain">
+
+                  </p>
+                </div>
+
+                <div class="bg-slate-900 border border-white/10 rounded-2xl p-4">
+                  <p class="text-slate-400 text-xs uppercase tracking-wide">Exterior</p>
+                  <p class="text-white font-semibold mt-2" id="modalExterior">
+
+                  </p>
+                </div>
+
+                <div class="bg-slate-900 border border-white/10 rounded-2xl p-4">
+                  <p class="text-slate-400 text-xs uppercase tracking-wide">Interior</p>
+                  <p class="text-white font-semibold mt-2" id="modalInterior">
+
+                  </p>
+                </div>
+
+                <div class="bg-slate-900 border border-white/10 rounded-2xl p-4">
+                  <p class="text-slate-400 text-xs uppercase tracking-wide">Engine</p>
+                  <p class="text-white font-semibold mt-2" id="modalEngine">
+
+                  </p>
+                </div>
+
+                <div class="bg-slate-900 border border-white/10 rounded-2xl p-4">
+                  <p class="text-slate-400 text-xs uppercase tracking-wide">Battery Setup</p>
+                  <p class="text-white font-semibold mt-2" id="modalBattery">
+
+                  </p>
+                </div>
+
+                <div class="bg-slate-900 border border-white/10 rounded-2xl p-4">
+                  <p class="text-slate-400 text-xs uppercase tracking-wide">Power</p>
+                  <p class="text-white font-semibold mt-2" id="modalPower">
+
+                  </p>
+                </div>
+
+                <div class="bg-slate-900 border border-white/10 rounded-2xl p-4">
+                  <p class="text-slate-400 text-xs uppercase tracking-wide">0–60 mph</p>
+                  <p class="text-white font-semibold mt-2" id="modalZeroSixty">
+
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Features -->
+            <div class="mb-10">
+              <h3 class="text-white text-xl md:text-2xl font-semibold mb-4">Premium Features</h3>
+
+              <div class="grid md:grid-cols-2 gap-3">
+                <div class="bg-slate-900/70 border border-white/10 rounded-xl px-4 py-3 text-slate-300"
+                  id="firstFeature"></div>
+                <div class="bg-slate-900/70 border border-white/10 rounded-xl px-4 py-3 text-slate-300"
+                  id="secondFeature"></div>
+                <div class="bg-slate-900/70 border border-white/10 rounded-xl px-4 py-3 text-slate-300"
+                  id="thirdFeature"></div>
+                <div class="bg-slate-900/70 border border-white/10 rounded-xl px-4 py-3 text-slate-300"
+                  id="fourthFeature"></div>
+                <div class="bg-slate-900/70 border border-white/10 rounded-xl px-4 py-3 text-slate-300"
+                  id="fifthFeature"></div>
+                <div class="bg-slate-900/70 border border-white/10 rounded-xl px-4 py-3 text-slate-300"
+                  id="sixthFeature"></div>
+                <div class="bg-slate-900/70 border border-white/10 rounded-xl px-4 py-3 text-slate-300"
+                  id="seventhFeature"></div>
+                <div class="bg-slate-900/70 border border-white/10 rounded-xl px-4 py-3 text-slate-300"
+                  id="eighthFeature"></div>
+              </div>
+            </div>
+
+            <!-- Availability -->
+            <div class="mb-10">
+              <div class="bg-amber-400/10 border border-amber-400/20 rounded-2xl p-5">
+                <p class="text-amber-400 text-sm font-semibold uppercase tracking-wide mb-2">Availability</p>
+                <p class="text-white text-lg font-semibold">Available Now</p>
+                <p class="text-slate-400 text-sm mt-2" id="available">
+
+                </p>
+              </div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 pb-6">
+              <button id="bookTestDriveBtn"
+                class="bg-amber-400 text-slate-950 font-semibold px-6 py-3 rounded-full hover:bg-amber-300 transition-all">
+                Book a Test Drive
+              </button>
+
+              <button id="contactSalesBtn" class="border border-white/15 text-white font-semibold px-6 py-3 rounded-full hover:bg-white/5 
+              transition-all">Contact Sales</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <section class="bg-slate-950/70 border-t border-b border-white/10 py-12">
+      <h3 class="text-amber-400 text-2xl font-bold mb-2 text-center">Why Choose Us</h3>
+      <div class="grid md:grid-cols-2 gap-8 max-w-7xl mx-auto px-6 py-12">
+        <!--1st trust card-->
+        <div class="bg-slate-900 border-solid border-amber-200 border-2 rounded-2xl p-6 max-w-4xl mx-auto hover:shadow-2xl 
+                hover:transition-shadow transform duration-300 hover:scale-105">
+          <img src="car icon.jpeg" alt="Luxury Cars" class="rounded-2xl mb-3 h-20 w-20">
+          <h2 class="text-white text-3xl">20+ Premium Vehicles</h2>
+          <p class="text-gray-300 mt-2">Discover our exclusive collection of high-end vehicles, meticulously
+            curated to meet the desires of discerning automotive enthusiasts. Each car in our inventory
+            represents the pinnacle of luxury and performance, ensuring an unparalleled driving experience.
+          </p>
+        </div>
+        <!--2nd trust card-->
+        <div class="bg-slate-900 border-solid border-amber-200 border-2 rounded-2xl p-6 max-w-4xl mx-auto hover:shadow-2xl 
+                hover:transition-shadow transform duration-300 hover:scale-105 ">
+          <img src="shield.jpeg" alt="Luxury Cars" class="rounded-2xl mb-3 h-20 w-20">
+          <h2 class="text-white text-3xl">100% Inspected Inventory</h2>
+          <p class="text-gray-300 mt-2">Every listed vehicle is carefully reviewed for quality, comfort and
+            performance.</p>
+        </div>
+        <!--3rd trust card-->
+        <div class="bg-slate-900 border-solid border-amber-200 border-2 rounded-2xl p-6 max-w-4xl mx-auto hover:shadow-2xl 
+                hover:transition-shadow transform duration-300 hover:scale-105">
+          <img src="gem.jpeg" alt="Luxury Cars" class="rounded-2xl mb-3 h-20 w-20">
+          <h2 class="text-white text-3xl">10+ Luxury Brands</h2>
+          <p class="text-gray-300 mt-2">Featuring elite manufacturers including Lamborghini, BMW, Audi,
+            Mercedes-benz and Cadillac.</p>
+        </div>
+        <!--4th trust card-->
+        <div class="bg-slate-900 border-solid border-amber-200 border-2 rounded-2xl p-6 max-w-4xl mx-auto hover:shadow-2xl 
+                hover:transition-shadow transform duration-300 hover:scale-105">
+          <img src="Phone.jpeg" alt="Luxury Cars" class="rounded-2xl mb-3 h-20 w-20">
+          <h2 class="text-white text-3xl">24/7 Sales Assistance</h2>
+          <p class="text-gray-300 mt-2">Our dedicated team is available around the clock to assist you with
+            any
+            questions or inquiries, schedule inspections and help you choose confidently..</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="py-20 px-6 bg-gradient-to-b from-slate-950 to-slate-900">
+      <div class="max-w-6xl mx-auto">
+        <h3 class="text-amber-400 text-2xl font-bold mb-2 text-center">HEAR FROM OUR CLIENTS</h3>
+        <h2 class="text-4xl font-bold text-center text-white mb-12">Customer Testimonials</h2>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Testimonial 1 -->
+          <div class="bg-slate-900 rounded-2xl p-8 border border-amber-400/20 hover:border-amber-400/50 transition-all hover:scale-105 duration-300 shadow-xl">
+            <div class="flex items-center gap-1 mb-4">
+              <span class="text-amber-400">★★★★★</span>
+            </div>
+            <p class="text-gray-300 mb-6 italic leading-relaxed">"LuxDrive Motors provided an exceptional experience. The 2024 Cadillac Escalade Sport I purchased exceeded all my expectations. Professional, knowledgeable, and genuine care for customer satisfaction!"</p>
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center text-white font-bold">AC</div>
+              <div>
+                <h4 class="text-white font-semibold">Alexandria Carter</h4>
+                <p class="text-amber-400 text-sm">Verified Buyer</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-slate-900 rounded-2xl p-8 border border-amber-400/20 hover:border-amber-400/50 transition-all hover:scale-105 duration-300 shadow-xl">
+            <div class="flex items-center gap-1 mb-4">
+              <span class="text-amber-400">★★★★★</span>
+            </div>
+            <p class="text-gray-300 mb-6 italic leading-relaxed">"The Mercedes-Benz S-Class I got from LuxDrive is pure elegance. Every detail was perfect, and their service team went above and beyond to ensure my complete satisfaction. Highly recommended!"</p>
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center text-white font-bold">MJ</div>
+              <div>
+                <h4 class="text-white font-semibold">Marcus Johnson</h4>
+                <p class="text-amber-400 text-sm">Verified Buyer</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-slate-900 rounded-2xl p-8 border border-amber-400/20 hover:border-amber-400/50 transition-all hover:scale-105 duration-300 shadow-xl">
+            <div class="flex items-center gap-1 mb-4">
+              <span class="text-amber-400">★★★★★</span>
+            </div>
+            <p class="text-gray-300 mb-6 italic leading-relaxed">"Finally found a dealership that treats luxury cars with the respect they deserve. Tesla Cybertruck purchase was seamless. LuxDrive's expertise and dedication are unmatched in the industry!"</p>
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center text-white font-bold">VR</div>
+              <div>
+                <h4 class="text-white font-semibold">Victoria Rodriguez</h4>
+                <p class="text-amber-400 text-sm">Verified Buyer</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="bg-slate-900 rounded-2xl p-8 border border-amber-400/20 hover:border-amber-400/50 transition-all hover:scale-105 duration-300 shadow-xl">
+            <div class="flex items-center gap-1 mb-4">
+              <span class="text-amber-400">★★★★★</span>
+            </div>
+            <p class="text-gray-300 mb-6 italic leading-relaxed">"Purchased the Porsche 911 Carrera and couldn't be happier. The entire process from selection to delivery was handled with precision and professionalism. Outstanding dealership!"</p>
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center text-white font-bold">DK</div>
+              <div>
+                <h4 class="text-white font-semibold">David King</h4>
+                <p class="text-amber-400 text-sm">Verified Buyer</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 5 -->
+          <div class="bg-slate-900 rounded-2xl p-8 border border-amber-400/20 hover:border-amber-400/50 transition-all hover:scale-105 duration-300 shadow-xl">
+            <div class="flex items-center gap-1 mb-4">
+              <span class="text-amber-400">★★★★★</span>
+            </div>
+            <p class="text-gray-300 mb-6 italic leading-relaxed">"The BMW X7 ownership experience has been incredible thanks to LuxDrive's support. Their team is knowledgeable, responsive, and truly passionate about luxury vehicles. Five stars!"</p>
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center text-white font-bold">ES</div>
+              <div>
+                <h4 class="text-white font-semibold">Elena Sophia</h4>
+                <p class="text-amber-400 text-sm">Verified Buyer</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 6 -->
+          <div class="bg-slate-900 rounded-2xl p-8 border border-amber-400/20 hover:border-amber-400/50 transition-all hover:scale-105 duration-300 shadow-xl">
+            <div class="flex items-center gap-1 mb-4">
+              <span class="text-amber-400">★★★★★</span>
+            </div>
+            <p class="text-gray-300 mb-6 italic leading-relaxed">"Bought the Lamborghini Huracán EVO and it's been a dream come true. LuxDrive's transparency and expertise made the entire purchase process enjoyable. Truly exceptional service!"</p>
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center text-white font-bold">RC</div>
+              <div>
+                <h4 class="text-white font-semibold">Robert Chen</h4>
+                <p class="text-amber-400 text-sm">Verified Buyer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<!-- SERVICES SECTION GOES HERE -->
+<section id="services" class="py-16 px-6 bg-gray-950 text-center">
+  <h2 class="text-3xl font-bold mb-10">Our Services</h2>
+
+  <div class="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+
+    <div class="p-6 border border-gray-800 rounded-xl hover:scale-105 transition">
+      <h3 class="text-xl font-semibold mb-2">Luxury Sales</h3>
+      <p class="text-gray-400 text-sm">Premium vehicles from top brands.</p>
+    </div>
+
+    <div class="p-6 border border-gray-800 rounded-xl hover:scale-105 transition">
+      <h3 class="text-xl font-semibold mb-2">Financing</h3>
+      <p class="text-gray-400 text-sm">Flexible payment plans tailored for you.</p>
+    </div>
+
+    <div class="p-6 border border-gray-800 rounded-xl hover:scale-105 transition">
+      <h3 class="text-xl font-semibold mb-2">Test Drives</h3>
+      <p class="text-gray-400 text-sm">Experience performance before purchase.</p>
+    </div>
+
+    <div class="p-6 border border-gray-800 rounded-xl hover:scale-105 transition">
+      <h3 class="text-xl font-semibold mb-2">Consultation</h3>
+      <p class="text-gray-400 text-sm">Expert advice for your perfect car choice.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- BLOG SECTION -->
+<section id="blog" class="py-20 px-6 bg-slate-900 text-white scroll-mt-20">
+  <div class="max-w-6xl mx-auto">
+    <h3 class="text-amber-400 text-2xl font-bold mb-2 text-center">LUXURY AUTO INSIGHTS</h3>
+    <h2 class="text-4xl font-bold mb-4 text-center">Latest Blog Articles</h2>
+    
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Blog Post 1 -->
+      <div class="bg-slate-800 rounded-2xl overflow-hidden border border-amber-400/20 hover:border-amber-400/50 transition-all hover:scale-105 duration-300 shadow-xl group cursor-pointer">
+        <div class="relative h-48 bg-gradient-to-br from-amber-300 to-orange-300 overflow-hidden">
+          <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition"></div>
+          <div class="absolute inset-0 flex items-center justify-center text-6xl opacity-30"><img src="bmw ix.jpeg" alt=""></div>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="text-amber-400 text-xs font-semibold uppercase">April 15, 2026</span>
+            <span class="text-gray-500">•</span>
+            <span class="text-gray-400 text-xs">5 min read</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3 group-hover:text-amber-400 transition">The Ultimate Guide to Electric Luxury Vehicles</h3>
+          <p class="text-gray-400 mb-4">Discover the future of luxury motoring. We explore the latest electric supercars and their revolutionary technology that's changing the automotive landscape.</p>
+          <button class="blog-read-more text-amber-400 font-semibold hover:text-amber-300 transition inline-flex items-center gap-2" data-article-id="1" data-title="The Ultimate Guide to Electric Luxury Vehicles" data-date="April 15, 2026">
+            Read More →
+          </button>
+        </div>
+      </div>
+
+      <!-- Blog Post 2 -->
+      <div class="bg-slate-800 rounded-2xl overflow-hidden border border-amber-400/20 hover:border-amber-400/50 transition-all hover:scale-105 duration-300 shadow-xl group cursor-pointer">
+        <div class="relative h-48 bg-gradient-to-br from-purple-600 to-blue-600 overflow-hidden">
+          <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition"></div>
+          <div class="absolute inset-0 flex items-center justify-center text-6xl opacity-30"><img src="ferrari f8.jpeg" alt=""></div>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="text-amber-400 text-xs font-semibold uppercase">April 10, 2026</span>
+            <span class="text-gray-500">•</span>
+            <span class="text-gray-400 text-xs">7 min read</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3 group-hover:text-amber-400 transition">Luxury Car Maintenance: Pro Tips from Experts</h3>
+          <p class="text-gray-400 mb-4">Learn how to maintain your luxury vehicle in pristine condition. Our experts share insider tips on care, storage, and preservation for long-lasting excellence.</p>
+          <button class="blog-read-more text-amber-400 font-semibold hover:text-amber-300 transition inline-flex items-center gap-2" data-article-id="2" data-title="Luxury Car Maintenance: Pro Tips from Experts" data-date="April 10, 2026">
+            Read More →
+          </button>
+        </div>
+      </div>
+
+      <!-- Blog Post 3 -->
+      <div class="bg-slate-800 rounded-2xl overflow-hidden border border-amber-400/20 hover:border-amber-400/50 transition-all hover:scale-105 duration-300 shadow-xl group cursor-pointer">
+        <div class="relative h-48 bg-gradient-to-br from-red-600 to-pink-600 overflow-hidden">
+          <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition"></div>
+          <div class="absolute inset-0 flex items-center justify-center text-6xl opacity-30"><img src="rolls royce phantom.jpeg" alt=""></div>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="text-amber-400 text-xs font-semibold uppercase">April 5, 2026</span>
+            <span class="text-gray-500">•</span>
+            <span class="text-gray-400 text-xs">6 min read</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3 group-hover:text-amber-400 transition">2026 Luxury Car Trends: What's Next?</h3>
+          <p class="text-gray-400 mb-4">Stay ahead of the curve. Explore the hottest trends in luxury automotive design, performance, and technology for the upcoming season.</p>
+          <button class="blog-read-more text-amber-400 font-semibold hover:text-amber-300 transition inline-flex items-center gap-2" data-article-id="3" data-title="2026 Luxury Car Trends: What's Next?" data-date="April 5, 2026">
+            Read More →
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-12">
+      <button class="px-8 py-3 rounded-full border border-amber-400 text-amber-400 font-semibold hover:bg-amber-400 hover:text-slate-900 transition duration-300" onclick="document.getElementById('blog').scrollIntoView({behavior: 'smooth'})">
+        View All Articles
+      </button>
+    </div>
+  </div>
+</section>
+
+
+    <!-- FAQ Section -->
+    <section class="bg-slate-950 py-12">
+      <div class="max-w-3xl mx-auto px-4">
+        <h2 class="text-white text-2xl md:text-3xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
+         <p class="text-slate-400 text-lg text-center mb-5">Here are some common questions about our vehicles and services.</p>
+
+         <div class="space-y-4 mb-4">
+          <details class="group bg-slate-900 rounded-lg p-4 cursor-pointer select-none transition-all duration-300 hover:bg-slate-800">
+            <summary class="text-white font-semibold text-lg list-none flex justify-between items-center">Are all Vehicles inspected?
+              <span class="transition-transform duration-300 group-open:rotate-45 text-amber-400 text-4xl">+</span>
+            </summary>
+            <p class="text-slate-400 mt-2 leading-relaxed">Yes, every vehicle in our inventory undergoes a thorough multi-point inspection
+              to ensure it meets our high standards for safety, performance and reliability.
+               Our certified technicians check all major systems, including engine, transmission, brakes, suspension and more, to provide you with confidence in your purchase.
+            </p>
+          </details>
+         </div>
+
+         <div class="space-y-4 mb-4">
+          <details class="group bg-slate-900 rounded-lg p-4 cursor-pointer select-none transition-all duration-300 hover:bg-slate-800">
+            <summary class="text-white font-semibold text-lg list-none flex justify-between items-center">Do you offer financing options?
+              <span class="transition-transform duration-300 group-open:rotate-45 text-amber-400 text-4xl">+</span>
+            </summary>
+            <p class="text-slate-400 mt-2 leading-relaxed">Yes, we provide flexible financing solutions tailored to your needs, making it easier
+              to acquire your desired vehicle with manageable payments plans.</p>
+          </details>
+         </div>
+
+         <div class="space-y-4 mb-4">
+          <details class="group bg-slate-900 rounded-lg p-4 cursor-pointer select-none transition-all duration-300 hover:bg-slate-800">
+            <summary class="text-white font-semibold text-lg list-none flex justify-between items-center">Can I sell my vehicle to you?
+              <span class="transition-transform duration-300 group-open:rotate-45 text-amber-400 text-4xl">+</span>
+            </summary>
+            <p class="text-slate-400 mt-2 leading-relaxed">We buy used vehicles from individuals and businesses, offering fair market value for your pre-owned car.</p>
+          </details>
+         </div>
+
+         <div class="space-y-4 mb-4">
+          <details class="group bg-slate-900 rounded-lg p-4 cursor-pointer select-none transition-all duration-300 hover:bg-slate-800">
+            <summary class="text-white font-semibold text-lg list-none flex justify-between items-center">Can I test drive a vehicle?
+              <span class="transition-transform duration-300 group-open:rotate-45 text-amber-400 text-4xl">+</span>
+            </summary>
+            <p class="text-slate-400 mt-2 leading-relaxed">Yes, we encourage all potential buyers to take a test drive before making a purchase decision. This allows you to experience the vehicle's performance and features firsthand.
+              You can book a private test drive appointment at your convenience through our contact section.
+            </p>
+          </details>
+         </div>
+
+         <div class="space-y-4 mb-4">
+          <details class="group bg-slate-900 rounded-lg p-4 cursor-pointer select-none transition-all duration-300 hover:bg-slate-800">
+            <summary class="text-white font-semibold text-lg list-none flex justify-between items-center">Do you deliver nationwide?
+              <span class="transition-transform duration-300 group-open:rotate-45 text-amber-400 text-4xl">+</span>
+            </summary>
+            <p class="text-slate-400 mt-2 leading-relaxed">Yes, we offer secure and reliable nationwide delivery services ensuring your vehicle arrives safely at your location.</p>
+          </details>
+         </div>
+
+         <div class="space-y-4 mb-4">
+          <details class="group bg-slate-900 rounded-lg p-4 cursor-pointer select-none transition-all duration-300 hover:bg-slate-800">
+            <summary class="text-white font-semibold text-lg list-none flex justify-between items-center">Are the cars new or used?
+              <span class="transition-transform duration-300 group-open:rotate-45 text-amber-400 text-4xl">+</span>
+            </summary>
+            <p class="text-slate-400 mt-2 leading-relaxed">Our inventory includes both new and pre-owned vehicles, each clearly labeled for transparency.</p>
+          </details>
+         </div>
+
+         <div class="space-y-4 mb-4">
+          <details class="group bg-slate-900 rounded-lg p-4 cursor-pointer select-none transition-all duration-300 hover:bg-slate-800">
+            <summary class="text-white font-semibold text-lg list-none flex justify-between items-center">What documents do you require for the purchase?
+              <span class="transition-transform duration-300 group-open:rotate-45 text-amber-400 text-4xl">+</span>
+            </summary>
+            <p class="text-slate-400 mt-2 leading-relaxed">We require a valid driver's license, proof of insurance, and financial documentation to complete the purchase process.</p>
+          </details>
+         </div>
+
+         <div class="space-y-4 mb-4">
+          <details class="group bg-slate-900 rounded-lg p-4 cursor-pointer select-none transition-all duration-300 hover:bg-slate-800">
+            <summary class="text-white font-semibold text-lg list-none flex justify-between items-center">What documents will I receive?
+              <span class="transition-transform duration-300 group-open:rotate-45 text-amber-400 text-4xl">+</span>
+            </summary>
+            <p class="text-slate-400 mt-2 leading-relaxed">You will receive all necessary ownership documents, service records(if applicable), and a full vehicle report.</p>
+          </details>
+         </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="py-24 px-6 bg-gradient-to-b from-black via-gray-950 to-black text-white">
+
+  <!-- Header -->
+  <div class="max-w-6xl mx-auto text-center mb-14">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4 opacity-0 translate-y-6 animate-[fadeUp_0.8s_ease_forwards]">
+      Let's Talk Luxury
+    </h2>
+    <p class="text-gray-400 max-w-xl mx-auto opacity-0 translate-y-6 animate-[fadeUp_0.8s_ease_0.2s_forwards]">
+      Whether you're looking for a premium vehicle or a custom website, we’re here to build something exceptional.
+    </p>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+
+    <!-- LEFT INFO -->
+    <div class="space-y-6 opacity-0 translate-x-[-30px] animate-[slideInLeft_0.9s_ease_0.3s_forwards]">
+
+      <div class="p-6 rounded-2xl border border-gray-800 bg-gray-900/30 transition duration-300 hover:-translate-y-1 hover:bg-gray-900/50">
+        <h3 class="text-xl font-semibold mb-2">Email</h3>
+        <p class="text-gray-400">mogunbiyi2010@gmail.com</p>
+      </div>
+
+      <div class="p-6 rounded-2xl border border-gray-800 bg-gray-900/30 transition duration-300 hover:-translate-y-1 hover:bg-gray-900/50">
+        <h3 class="text-xl font-semibold mb-2">Phone</h3>
+        <p class="text-gray-400">+234 903 598 7982</p>
+      </div>
+
+      <div class="p-6 rounded-2xl border border-gray-800 bg-gray-900/30 transition duration-300 hover:-translate-y-1 hover:bg-gray-900/50">
+        <h3 class="text-xl font-semibold mb-2">Location</h3>
+        <p class="text-gray-400">Lagos, Nigeria</p>
+      </div>
+
+    </div>
+
+    <!-- RIGHT FORM -->
+    <form class="space-y-5 p-8 rounded-2xl border border-gray-800 bg-gray-900/40 shadow-xl opacity-0 translate-x-[30px] animate-[slideInRight_0.9s_ease_0.3s_forwards]"
+     action="https://formspree.io/f/xbdzojql"
+  method="POST">
+
+      <div>
+        <label class="text-sm text-gray-400">Name</label>
+        <input type="text" placeholder="Your name" name="name"
+          class="w-full mt-2 p-3 rounded-xl bg-black border border-gray-700
+          transition duration-300 focus:border-white focus:ring-2 focus:ring-white/20 focus:scale-[1.02] outline-none">
+      </div>
+
+      <div>
+        <label class="text-sm text-gray-400">Email</label>
+        <input type="email" placeholder="Your email" name="Email"
+          class="w-full mt-2 p-3 rounded-xl bg-black border border-gray-700
+          transition duration-300 focus:border-white focus:ring-2 focus:ring-white/20 focus:scale-[1.02] outline-none">
+      </div>
+
+      <div>
+        <label class="text-sm text-gray-400">Message</label>
+        <textarea rows="5" placeholder="Tell us what you need..." name="Message"
+          class="w-full mt-2 p-3 rounded-xl bg-black border border-gray-700
+          transition duration-300 focus:border-white focus:ring-2 focus:ring-white/20 focus:scale-[1.02] outline-none"></textarea>
+      </div>
+
+      <button
+        class="w-full py-3 rounded-xl bg-white text-black font-semibold
+        transition duration-300 hover:scale-[1.03] hover:bg-gray-200 active:scale-[0.98]" type="submit">
+        Send Message
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+    <section class="bg-gradient-to-r from-black via-gray-900 to-black py-16 px-6 text-center">
+  <h2 class="text-3xl md:text-4xl font-bold mb-4">
+    Ready to Drive Luxury?
+  </h2>
+
+  <p class="text-gray-400 mb-8 max-w-xl mx-auto">
+    Explore our premium collection of high-end vehicles and experience performance like never before.
+  </p>
+
+  <div class="flex justify-center gap-4 flex-wrap">
+    <a href="#inventory" class="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">
+      Browse Cars
+    </a>
+
+    <a href="#contact" class="border border-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-black transition">
+      Contact Us
+    </a>
+  </div>
+</section>
+
+  </main>
+
+  <!-- BLOG MODAL -->
+  <div id="blogModal" class="fixed inset-0 hidden items-center justify-center bg-black/70 backdrop-blur-md z-50 px-4 py-6">
+    <!-- Modal Overlay -->
+    <div class="modal-overlay absolute inset-0"></div>
+
+    <!-- Modal Content -->
+    <div class="relative z-10 w-full max-w-3xl bg-slate-950 border border-amber-400/30 rounded-2xl shadow-2xl overflow-hidden max-h-[90vh] flex flex-col">
+      
+      <!-- Header -->
+      <div class="flex justify-between items-center p-6 border-b border-amber-400/20">
+        <h2 id="blogModalTitle" class="text-2xl font-bold text-white">Blog Article</h2>
+        <button id="closeBlogBtn" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-all">
+          ×
+        </button>
+      </div>
+
+      <!-- Content -->
+      <div class="overflow-y-auto flex-1 p-6">
+        <div id="blogDate" class="text-amber-400 text-sm font-semibold mb-4"></div>
+        
+        <div id="blogContent" class="text-gray-300 space-y-4 leading-relaxed">
+          <!-- Content will be dynamically inserted -->
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="border-t border-amber-400/20 p-6 bg-slate-900/50">
+        <button id="closeBlogBtnFooter" class="w-full bg-amber-400 hover:bg-amber-500 text-slate-950 font-bold py-3 px-4 rounded-xl transition-all">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CART MODAL -->
+  <div id="cartModal" class="fixed inset-0 hidden items-center justify-center bg-black/70 backdrop-blur-md z-50 px-4 py-6">
+    <!-- Modal Overlay -->
+    <div class="modal-overlay absolute inset-0"></div>
+
+    <!-- Modal Content -->
+    <div class="relative z-10 w-full max-w-2xl bg-slate-950 border border-amber-400/30 rounded-2xl shadow-2xl overflow-hidden max-h-[90vh] flex flex-col">
+      
+      <!-- Header -->
+      <div class="flex justify-between items-center p-6 border-b border-amber-400/20">
+        <h2 class="text-2xl font-bold text-white">Your Shopping Cart</h2>
+        <button id="closeCartBtn" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-all">
+          ×
+        </button>
+      </div>
+
+      <!-- Cart Items -->
+      <div id="cartItems" class="overflow-y-auto flex-1 p-6">
+        <div id="emptyCart" class="text-center py-12 text-gray-400">
+          <svg class="w-16 h-16 mx-auto mb-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+          </svg>
+          <p>Your cart is empty</p>
+          <p class="text-sm mt-2">Browse our luxury collection and add cars to get started!</p>
+        </div>
+        <div id="cartItemsList" class="space-y-4"></div>
+      </div>
+
+      <!-- Footer with Total and Checkout -->
+      <div class="border-t border-amber-400/20 p-6 bg-slate-900/50">
+        <div class="flex justify-between items-center mb-4">
+          <span class="text-lg font-semibold text-white">Total:</span>
+          <span id="cartTotal" class="text-3xl font-bold text-amber-400">$0</span>
+        </div>
+        <button class="w-full bg-amber-400 hover:bg-amber-500 text-slate-950 font-bold py-3 px-4 rounded-xl transition-all">
+          Proceed to Checkout
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <a href="testdrive.html" class="sticky-testdrive fixed bottom-5 right-5 z-50 inline-flex items-center justify-center rounded-full bg-gradient-to-r from-amber-400 via-orange-400 to-pink-500 px-6 py-4 text-sm font-semibold text-slate-950 shadow-2xl shadow-pink-500/30 transition duration-300 hover:-translate-y-1 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-amber-300 focus:ring-offset-2 focus:ring-offset-slate-950">
+    Book a Test Drive
+  </a>
+
+<footer class="bg-black text-gray-400 py-12 px-6">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
+
+    <div>
+      <h3 class="text-white text-xl font-bold mb-4">LuxDrive</h3>
+      <p class="text-sm">
+        Premium car dealership offering luxury, performance, and elegance in every ride.
+      </p>
+    </div>
+
+    <div>
+      <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-white transition">Home</a></li>
+        <li><a href="#inventory" class="hover:text-white transition">Inventory</a></li>
+        <li><a href="#about" class="hover:text-white transition">About</a></li>
+        <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="text-white font-semibold mb-4">Services</h4>
+      <ul class="space-y-2">
+        <li>Luxury Sales</li>
+        <li>Car Financing</li>
+        <li>Test Drives</li>
+        <li>Consultation</li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="text-white font-semibold mb-4">Contact</h4>
+      <p>Email: mogunbiyi2010@gmail.com</p>
+      <p>Phone: +234 903 598 7982</p>
+      <div class="flex gap-4">
+      <a href="https://wa.me/+234903598782" class="w-10 h-10 bg-slate-700 dark:bg-slate-700 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+          <img src="https://www.svgrepo.com/show/452133/whatsapp.svg" alt="WhatsApp" class="w-5 h-5">
+      </a>
+      <a href="https://www.linkedin.com/in/michael-adedamola-ogunbiyi-1733ba372?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="w-10 h-10 bg-slate-700 dark:bg-slate-700 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+      </a>
+      <a href="https://github.com/OgunbiyiMichael1" class="w-10 h-10 bg-slate-700 dark:bg-slate-700 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+      </a>
+      </div>
+
+      <p class="mt-2">Lagos, Nigeria</p>
+    </div>
+
+  </div>
+
+  <div class="border-t border-gray-800 mt-10 pt-6 text-center text-sm">
+    © 2026 LuxDrive. All rights reserved.
+    <p class="text-sm text-gray-500 mt-4">
+      This is a frontend portfolio project showcasing a luxury car dealership UI.
+    </p>
+    <p class="text-sm text-gray-400 mt-4">
+      Interested in a similar website for your business? <a href="#contact" class="text-amber-400 hover:underline">Contact me</a> for a custom design and development solution.
+    </p>
+  </div>
+</footer>
+
+
+
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('nav-menu');
+    const hamburger = document.querySelector('.hamburger');
+    const close = document.querySelector('.close');
+    const navLinks = document.querySelectorAll('#nav-menu a');
+
+    function hideMobileMenu() {
+      if (!menu.classList.contains('hidden')) {
+        menu.classList.add('hidden');
+        hamburger.classList.remove('hidden');
+        close.classList.add('hidden');
+      }
+    }
+
+    menuToggle.addEventListener('click', function () {
+      menu.classList.toggle('hidden');
+      hamburger.classList.toggle('hidden');
+      close.classList.toggle('hidden');
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', function () {
+        hideMobileMenu();
+        navLinks.forEach(item => {
+          item.classList.remove('text-amber-400', 'underline', 'decoration-amber-400', 'underline-offset-4');
+        });
+        this.classList.add('text-amber-400', 'underline', 'decoration-amber-400', 'underline-offset-4');
+      });
+    });
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const carCards = document.querySelectorAll('.car-card');
+
+    // Initially, all cards are visible
+    carCards.forEach(card => card.classList.add('filtered-in'));
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.dataset.filter;
+
+        // Update active button styling
+        filterBtns.forEach(b => {
+          if (b === btn) {
+            b.classList.add('bg-amber-400', 'text-gray-900', 'shadow');
+            b.classList.remove('bg-slate-800', 'text-white', 'border');
+          } else {
+            b.classList.remove('bg-amber-400', 'text-gray-900', 'shadow');
+            b.classList.add('bg-slate-800', 'text-white', 'border', 'border-white/10');
+          }
+        });
+
+        // Update filtered-in class
+        carCards.forEach(card => {
+          const categories = card.dataset.category.split(' ');
+          if (filter === 'all' || categories.includes(filter)) {
+            card.classList.add('filtered-in');
+          } else {
+            card.classList.remove('filtered-in');
+          }
+        });
+
+        // Update visibility
+        updateCars();
+      });
+    });
+
+    const openButtons = document.querySelectorAll(".open-modal");
+    const closeButtons = document.querySelectorAll(".close-modal");
+    const modals = document.querySelectorAll(".modal");
+
+    // OPEN MODAL
+    openButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const modalId = button.getAttribute("data-modal");
+        const modal = document.getElementById(modalId);
+        const modalContent = modal.querySelector(".modal-content");
+
+        // show modal container
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+
+        // stop page scrolling
+        document.body.classList.add("overflow-hidden");
+
+        // small animation after showing
+        setTimeout(() => {
+          modalContent.classList.remove("scale-95", "opacity-0");
+          modalContent.classList.add("scale-100", "opacity-100");
+        }, 10);
+      });
+    });
+
+    // CLOSE MODAL FUNCTION
+    function closeModal(modal) {
+      const modalContent = modal.querySelector(".modal-content");
+
+      // animate out
+      modalContent.classList.remove("scale-100", "opacity-100");
+      modalContent.classList.add("scale-95", "opacity-0");
+
+      setTimeout(() => {
+        modal.classList.remove("flex");
+        modal.classList.add("hidden");
+        document.body.classList.remove("overflow-hidden");
+      }, 250);
+    }
+
+    // CLOSE BUTTON CLICK
+    closeButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const modal = button.closest(".modal");
+        closeModal(modal);
+      });
+    });
+
+    // CLICK OUTSIDE MODAL CONTENT TO CLOSE
+    modals.forEach((modal) => {
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal || e.target.classList.contains("modal-overlay")) {
+          closeModal(modal);
+        }
+      });
+    });
+
+    // ESC KEY TO CLOSE
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        modals.forEach((modal) => {
+          if (!modal.classList.contains("hidden")) {
+            closeModal(modal);
+          }
+        });
+      }
+    });
+
+    //show more/ show less functionality 
+    const carCard = document.querySelectorAll(".car-card");
+    const toggleCarsBtn = document.getElementById("toggleCarsBtn");
+
+    const visibleCount = 6;
+    let expanded = false;
+
+    function updateCars() {
+      let visibleIndex = 0;
+      let totalVisible = 0;
+      carCard.forEach((card) => {
+        if (card.classList.contains('filtered-in')) {
+          totalVisible++;
+          if (expanded || visibleIndex < visibleCount) {
+            card.style.display = 'block';
+            visibleIndex++;
+          } else {
+            card.style.display = 'none';
+          }
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      if (totalVisible <= visibleCount) {
+        toggleCarsBtn.style.display = 'none';
+      } else {
+        toggleCarsBtn.style.display = 'block';
+        toggleCarsBtn.textContent = expanded ? "Show Less" : "Show More";
+      }
+    }
+
+    updateCars();
+
+    toggleCarsBtn.addEventListener("click", () => {
+      expanded = !expanded;
+      updateCars();
+    });
+
+
+    //reusable modal functionality
+    const openModalButtons = document.querySelectorAll(".view-details-btn");
+    const reusableModal = document.getElementById("carModal");
+    const reusableModalContent = reusableModal.querySelector(".modal-content");
+    const modalLabel = reusableModal.querySelector("#modalLabel");
+    const modalTitle = reusableModal.querySelector("#modalTitle");
+    const modalPrice = reusableModal.querySelector("#modalPrice");
+    const modalImage = document.getElementById("modalMainImage");
+    const modalOverview = reusableModal.querySelector("#modalOverview");
+    const modalCondition = reusableModal.querySelector("#modalCondition");
+    const modalMileage = reusableModal.querySelector("#modalMileage");
+    const modalTransmission = reusableModal.querySelector("#modalTransmission");
+    const modalFuelType = reusableModal.querySelector("#modalFuelType");
+    const modalDrivetrain = reusableModal.querySelector("#modalDrivetrain");
+    const modalExterior = reusableModal.querySelector("#modalExterior");
+    const modalInterior = reusableModal.querySelector("#modalInterior");
+    const modalEngine = reusableModal.querySelector("#modalEngine");
+    const modalPower = reusableModal.querySelector("#modalPower");
+    const modalZeroSixty = reusableModal.querySelector("#modalZeroSixty");
+    const modalAvailable = reusableModal.querySelector("#available");
+    const firstFeature = reusableModal.querySelector("#firstFeature");
+    const secondFeature = reusableModal.querySelector("#secondFeature");
+    const thirdFeature = reusableModal.querySelector("#thirdFeature");
+    const fourthFeature = reusableModal.querySelector("#fourthFeature");
+    const fifthFeature = reusableModal.querySelector("#fifthFeature");
+    const sixthFeature = reusableModal.querySelector("#sixthFeature");
+    const seventhFeature = reusableModal.querySelector("#seventhFeature");
+    const eighthFeature = reusableModal.querySelector("#eighthFeature");
+    const battery = reusableModal.querySelector("#modalBattery");
+
+    openModalButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const label = button.getAttribute("data-label");
+        const title = button.getAttribute("data-title");
+        const price = button.getAttribute("data-price");
+        const imageSrc = button.getAttribute("data-image");
+        const overview = button.getAttribute("data-overview");
+        const condition = button.getAttribute("data-condition");
+        const mileage = button.getAttribute("data-mileage");
+        const transmission = button.getAttribute("data-transmission");
+        const fuelType = button.getAttribute("data-fuel-type");
+        const drivetrain = button.getAttribute("data-drivetrain");
+        const interior = button.getAttribute("data-interior");
+        const exterior = button.getAttribute("data-exterior");
+        const engine = button.getAttribute("data-engine");
+        const power = button.getAttribute("data-power");
+        const zeroSixty = button.getAttribute("data-zero-sixty");
+        const available = button.getAttribute("data-available");
+        const first = button.getAttribute("data-first-feature");
+        const second = button.getAttribute("data-second-feature");
+        const third = button.getAttribute("data-third-feature");
+        const fourth = button.getAttribute("data-fourth-feature");
+        const fifth = button.getAttribute("data-fifth-feature");
+        const sixth = button.getAttribute("data-sixth-feature");
+        const seventh = button.getAttribute("data-seventh-feature");
+        const eighth = button.getAttribute("data-eighth-feature");
+        const batteryPower = button.getAttribute("data-battery");
+
+        modalLabel.textContent = label;
+        modalTitle.textContent = title;
+        modalPrice.textContent = price;
+        modalImage.src = imageSrc;
+        modalOverview.textContent = overview;
+        modalCondition.textContent = condition;
+        modalMileage.textContent = mileage;
+        modalTransmission.textContent = transmission;
+        modalFuelType.textContent = fuelType;
+        modalDrivetrain.textContent = drivetrain;
+        modalExterior.textContent = exterior;
+        modalInterior.textContent = interior;
+        modalEngine.textContent = engine;
+        modalPower.textContent = power;
+        modalZeroSixty.textContent = zeroSixty;
+        modalAvailable.textContent = available;
+        firstFeature.textContent = first;
+        secondFeature.textContent = second;
+        thirdFeature.textContent = third;
+        fourthFeature.textContent = fourth;
+        fifthFeature.textContent = fifth;
+        sixthFeature.textContent = sixth;
+        seventhFeature.textContent = seventh;
+        eighthFeature.textContent = eighth;
+        battery.textContent = batteryPower;
+
+        // show reusable modal
+        reusableModal.classList.remove("hidden");
+        reusableModal.classList.add("flex");
+
+        // stop page scrolling
+        document.body.classList.add("overflow-hidden");
+
+        // small animation after showing
+        setTimeout(() => {
+          reusableModalContent.classList.remove("scale-95", "opacity-0");
+          reusableModalContent.classList.add("scale-100", "opacity-100");
+        }, 10);
+      });
+    });
+
+    // CLOSE REUSABLE MODAL
+    const reusableCloseButton = reusableModal.querySelector(".close-modal");
+    const reusableModalOverlay = reusableModal.querySelector(".modal-overlay");
+
+    function closeReusableModal() {
+      reusableModalContent.classList.remove("scale-100", "opacity-100");
+      reusableModalContent.classList.add("scale-95", "opacity-0");
+
+      setTimeout(() => {
+        reusableModal.classList.remove("flex");
+        reusableModal.classList.add("hidden");
+        document.body.classList.remove("overflow-hidden");
+      }, 250);
+    }
+
+    reusableCloseButton.addEventListener("click", closeReusableModal);
+    reusableModalOverlay.addEventListener("click", closeReusableModal);
+
+    // ESC KEY TO CLOSE REUSABLE MODAL
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && !reusableModal.classList.contains("hidden")) {
+        closeReusableModal();
+      }
+    });
+
+    // BOOK TEST DRIVE BUTTON HANDLER
+    const bookTestDriveBtn = document.getElementById('bookTestDriveBtn');
+    bookTestDriveBtn.addEventListener('click', () => {
+      const carTitle = modalTitle.textContent;
+      if (carTitle) {
+        // Navigate to test drive form with car name as parameter
+        window.location.href = `testdrive.html?car=${encodeURIComponent(carTitle)}`;
+      }
+    });
+
+    // CONTACT SALES BUTTON HANDLER
+    const contactSalesBtn = document.getElementById('contactSalesBtn');
+    contactSalesBtn.addEventListener('click', () => {
+      closeReusableModal();
+      setTimeout(() => {
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+          contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 300);
+    });
+
+    // ===== SHOPPING CART FUNCTIONALITY =====
+    let cart = JSON.parse(localStorage.getItem('luxdriveCart')) || [];
+
+    const cartBtn = document.getElementById('cart-btn');
+    const cartModal = document.getElementById('cartModal');
+    const closeCartBtn = document.getElementById('closeCartBtn');
+    const cartCount = document.getElementById('cart-count');
+    const cartItemsList = document.getElementById('cartItemsList');
+    const emptyCart = document.getElementById('emptyCart');
+    const cartTotal = document.getElementById('cartTotal');
+    const addToCartBtns = document.querySelectorAll('.add-to-cart-btn');
+    const modalOverlay = cartModal.querySelector('.modal-overlay');
+
+    // Update cart count display
+    function updateCartCount() {
+      cartCount.textContent = cart.length;
+    }
+
+    // Save cart to localStorage
+    function saveCart() {
+      localStorage.setItem('luxdriveCart', JSON.stringify(cart));
+    }
+
+    // Add item to cart
+    function addToCart(title, price, image) {
+      const item = {
+        id: Date.now(),
+        title: title,
+        price: parseFloat(price),
+        image: image
+      };
+      cart.push(item);
+      saveCart();
+      updateCartCount();
+      showCartNotification();
+    }
+
+    // Remove item from cart
+    function removeFromCart(id) {
+      cart = cart.filter(item => item.id !== id);
+      saveCart();
+      updateCartCount();
+      renderCartItems();
+    }
+
+    // Calculate and display total
+    function calculateTotal() {
+      const total = cart.reduce((sum, item) => sum + item.price, 0);
+      return total;
+    }
+
+    // Format currency
+    function formatCurrency(amount) {
+      return new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD'
+      }).format(amount);
+    }
+
+    // Render cart items
+    function renderCartItems() {
+      cartItemsList.innerHTML = '';
+
+      if (cart.length === 0) {
+        emptyCart.style.display = 'block';
+        cartTotal.textContent = '$0';
+      } else {
+        emptyCart.style.display = 'none';
+        cart.forEach(item => {
+          const cartItem = document.createElement('div');
+          cartItem.className = 'flex gap-4 p-4 bg-slate-800 rounded-lg border border-amber-400/20 hover:border-amber-400/50 transition';
+          cartItem.innerHTML = `
+            <img src="${item.image}" alt="${item.title}" class="w-20 h-20 rounded object-cover">
+            <div class="flex-1">
+              <h3 class="text-white font-semibold">${item.title}</h3>
+              <p class="text-amber-400 font-bold mt-2">${formatCurrency(item.price)}</p>
+            </div>
+            <button class="text-red-400 hover:text-red-300 px-3 py-2 hover:bg-red-900/20 rounded transition" onclick="removeFromCart(${item.id})">
+              Remove
+            </button>
+          `;
+          cartItemsList.appendChild(cartItem);
+        });
+
+        const total = calculateTotal();
+        cartTotal.textContent = formatCurrency(total);
+      }
+    }
+
+    // Show cart notification
+    function showCartNotification() {
+      const notification = document.createElement('div');
+      notification.className = 'fixed bottom-20 right-5 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg animate-pulse z-50';
+      notification.textContent = 'Added to cart! ✓';
+      document.body.appendChild(notification);
+      
+      setTimeout(() => {
+        notification.remove();
+      }, 2000);
+    }
+
+    // Open cart modal
+    function openCartModal() {
+      cartModal.classList.remove('hidden');
+      cartModal.classList.add('flex');
+      document.body.classList.add('overflow-hidden');
+      renderCartItems();
+    }
+
+    // Close cart modal
+    function closeCartModal() {
+      cartModal.classList.add('hidden');
+      cartModal.classList.remove('flex');
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    // Event listeners
+    cartBtn.addEventListener('click', openCartModal);
+    closeCartBtn.addEventListener('click', closeCartModal);
+    modalOverlay.addEventListener('click', closeCartModal);
+
+    // Close on ESC key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !cartModal.classList.contains('hidden')) {
+        closeCartModal();
+      }
+    });
+
+    // Add to cart button listeners
+    addToCartBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const title = btn.getAttribute('data-title');
+        const price = btn.getAttribute('data-price');
+        const image = btn.getAttribute('data-image');
+        addToCart(title, price, image);
+      });
+    });
+
+    // Initialize cart count on page load
+    updateCartCount();
+
+    // ===== BLOG MODAL FUNCTIONALITY =====
+    const blogModal = document.getElementById('blogModal');
+    const closeBlogBtn = document.getElementById('closeBlogBtn');
+    const closeBlogBtnFooter = document.getElementById('closeBlogBtnFooter');
+    const blogModalTitle = document.getElementById('blogModalTitle');
+    const blogDate = document.getElementById('blogDate');
+    const blogContent = document.getElementById('blogContent');
+    const blogReadMoreBtns = document.querySelectorAll('.blog-read-more');
+    const blogModalOverlay = blogModal.querySelector('.modal-overlay');
+
+    // Blog article data
+    const blogArticles = {
+      1: {
+        title: 'The Ultimate Guide to Electric Luxury Vehicles',
+        date: 'April 15, 2026',
+        content: `
+          <p>As the automotive industry shifts toward sustainable luxury, electric vehicles are no longer a future concept—they're a present reality. Leading luxury brands like Tesla, Porsche, and Audi are revolutionizing the market with vehicles that combine environmental consciousness with uncompromising performance.</p>
+          
+          <p><strong>Why Electric Luxury?</strong></p>
+          <p>Electric luxury vehicles offer a unique combination of benefits. They deliver instant torque for exhilarating acceleration, whisper-quiet cabins for ultimate comfort, and cutting-edge technology. The Porsche Taycan, for instance, produces over 600 horsepower while maintaining sophisticated elegance, proving that sustainability doesn't mean sacrificing performance.</p>
+          
+          <p><strong>The Technology Behind the Power</strong></p>
+          <p>Modern electric luxury cars feature advanced battery systems with ranges exceeding 300 miles per charge. Fast-charging capabilities mean you can add 200 miles of range in just 20 minutes. Regenerative braking systems capture energy during deceleration, while sophisticated thermal management systems ensure peak performance in all weather conditions.</p>
+          
+          <p><strong>The Future of Luxury Motoring</strong></p>
+          <p>The transition to electric power represents the future of luxury automobiles. Whether you're interested in the Tesla Model S, BMW iX, or Audi e-tron GT, electric luxury vehicles offer an incomparable driving experience that's both environmentally responsible and thrillingly performant.</p>
+        `
+      },
+      2: {
+        title: 'Luxury Car Maintenance: Pro Tips from Experts',
+        date: 'April 10, 2026',
+        content: `
+          <p>Owning a luxury vehicle means maintaining it to the highest standards. Whether you drive a Ferrari, Lamborghini, or Mercedes, proper maintenance is crucial for preserving performance, value, and your investment.</p>
+          
+          <p><strong>Regular Service Intervals</strong></p>
+          <p>Luxury vehicles typically require more frequent service intervals than standard cars. Follow your manufacturer's recommendations carefully—usually every 5,000-10,000 miles for oil changes. Using premium, synthetic oils specified by your manufacturer ensures optimal engine protection and performance.</p>
+          
+          <p><strong>Tire Care & Alignment</strong></p>
+          <p>High-performance tires on luxury cars require special attention. Rotate tires every 5,000-7,000 miles, check pressure monthly, and align wheels when needed. Proper tire maintenance improves safety, handling, and fuel efficiency while extending tire life.</p>
+          
+          <p><strong>Climate Control & Storage</strong></p>
+          <p>Store your luxury vehicle in a climate-controlled garage when possible. Extreme temperatures, humidity, and UV rays can damage paint, leather, and delicate electrical components. Use a quality car cover and ensure proper ventilation to prevent moisture accumulation.</p>
+          
+          <p><strong>Professional Detailing</strong></p>
+          <p>Invest in professional ceramic coating and detailing services. These protective layers shield your vehicle's paint from environmental contaminants while maintaining that showroom shine. Interior leather should be cleaned and conditioned regularly to maintain suppleness and prevent cracking.</p>
+        `
+      },
+      3: {
+        title: '2026 Luxury Car Trends: What\'s Next?',
+        date: 'April 5, 2026',
+        content: `
+          <p>The luxury automotive market continues to evolve with groundbreaking innovations and design philosophies. Here's what we're seeing in 2026 and beyond.</p>
+          
+          <p><strong>Autonomous Capabilities</strong></p>
+          <p>Advanced driver assistance systems are becoming standard in luxury vehicles. From adaptive cruise control to semi-autonomous parking, luxury cars are leading the charge toward safer, more autonomous driving experiences.</p>
+          
+          <p><strong>Hybrid & Electric Integration</strong></p>
+          <p>Major luxury brands are expanding their hybrid and fully electric lineups. Porsche, Ferrari, and Lamborghini are all introducing electrified powertrains that don't sacrifice performance. This trend will only accelerate as environmental regulations tighten.</p>
+          
+          <p><strong>Personalization Technology</strong></p>
+          <p>Bespoke customization is reaching new heights. Luxury manufacturers now offer AI-powered personalization, allowing buyers to customize everything from ambient lighting to suspension tuning. Virtual reality design studios let you visualize your custom build before purchase.</p>
+          
+          <p><strong>Sustainable Materials</strong></p>
+          <p>Eco-conscious luxury is trending. Premium manufacturers are incorporating recycled materials in cabins, sustainable leather alternatives, and carbon-neutral manufacturing processes. Luxury is increasingly defined by both performance and responsibility.</p>
+          
+          <p><strong>Connectivity & Infotainment</strong></p>
+          <p>5G connectivity, AI assistants, and integrated digital ecosystems are becoming standard. Vehicles now seamlessly integrate with smart homes, offer OTA (over-the-air) updates, and provide predictive maintenance notifications.</p>
+        `
+      }
+    };
+
+    // Open blog modal
+    function openBlogModal(articleId) {
+      const article = blogArticles[articleId];
+      if (article) {
+        blogModalTitle.textContent = article.title;
+        blogDate.textContent = article.date;
+        blogContent.innerHTML = article.content;
+        
+        blogModal.classList.remove('hidden');
+        blogModal.classList.add('flex');
+        document.body.classList.add('overflow-hidden');
+      }
+    }
+
+    // Close blog modal
+    function closeBlogModal() {
+      blogModal.classList.add('hidden');
+      blogModal.classList.remove('flex');
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    // Event listeners for blog modal
+    closeBlogBtn.addEventListener('click', closeBlogModal);
+    closeBlogBtnFooter.addEventListener('click', closeBlogModal);
+    blogModalOverlay.addEventListener('click', closeBlogModal);
+
+    // Close on ESC key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !blogModal.classList.contains('hidden')) {
+        closeBlogModal();
+      }
+    });
+
+    // Read more button listeners
+    blogReadMoreBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const articleId = btn.getAttribute('data-article-id');
+        openBlogModal(articleId);
+      });
+    });
+  </script>
+</body>
+
+</html>
