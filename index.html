@@ -173,7 +173,7 @@
                         px-4 py-2 rounded-full hover:bg-amber-300 transition-all" data-modal="Mercedes S-Class"
               data-label="Luxury Sedan" data-title="2021 Mercedes-Benz S-Class S500" data-price="$85,000"
               data-image="mercedes s500.jpeg"
-              data-overview="The Mercedes-Benx S-Class S500 is the benchmark for executive luxury sedans, offering world-class performance and comfort, 
+              data-overview="The Mercedes-Benz S-Class S500 is the benchmark for executive luxury sedans, offering world-class performance and comfort, 
               advanced cabin technology, and silky-smooth road manners.
               It delivers a refined driving experience built around elegance, innovation, and effortless prestige."
               data-condition="Used" data-mileage="25,000mi" data-transmission="Automatic" data-fuel-type="Petrol"
@@ -2162,7 +2162,8 @@ Every detail is engineered for a serene, cloud-like ride that defines the ultima
 
     // Update cart count display
     function updateCartCount() {
-      cartCount.textContent = cart.length;
+      const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+      cartCount.textContent = totalItems;
     }
 
     // Save cart to localStorage
@@ -2172,15 +2173,27 @@ Every detail is engineered for a serene, cloud-like ride that defines the ultima
 
     // Add item to cart
     function addToCart(title, price, image) {
+      const existingItem = cart.find(item => item.title === title);
+      if (existingItem) {
+        existingItem.quantity += 1;
+        saveCart();
+        updateCartCount();
+        renderCartItems();
+        showCartNotification('Quantity updated');
+        return;
+      }
+
       const item = {
-        id: Date.now(),
+        id: title.replace(/\s+/g, '-').toLowerCase(),
         title: title,
         price: parseFloat(price),
-        image: image
+        image: image,
+        quantity: 1
       };
       cart.push(item);
       saveCart();
       updateCartCount();
+      renderCartItems();
       showCartNotification();
     }
 
@@ -2194,7 +2207,7 @@ Every detail is engineered for a serene, cloud-like ride that defines the ultima
 
     // Calculate and display total
     function calculateTotal() {
-      const total = cart.reduce((sum, item) => sum + item.price, 0);
+      const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
       return total;
     }
 
@@ -2217,14 +2230,15 @@ Every detail is engineered for a serene, cloud-like ride that defines the ultima
         emptyCart.style.display = 'none';
         cart.forEach(item => {
           const cartItem = document.createElement('div');
-          cartItem.className = 'flex gap-4 p-4 bg-slate-800 rounded-lg border border-amber-400/20 hover:border-amber-400/50 transition';
+          cartItem.className = 'flex flex-col sm:flex-row gap-4 p-4 bg-slate-800 rounded-lg border border-amber-400/20 hover:border-amber-400/50 transition';
           cartItem.innerHTML = `
-            <img src="${item.image}" alt="${item.title}" class="w-20 h-20 rounded object-cover">
-            <div class="flex-1">
-              <h3 class="text-white font-semibold">${item.title}</h3>
+            <img src="${item.image}" alt="${item.title}" class="w-full sm:w-24 h-24 rounded object-cover flex-shrink-0">
+            <div class="flex-1 min-w-0">
+              <h3 class="text-white font-semibold text-base sm:text-lg">${item.title}</h3>
               <p class="text-amber-400 font-bold mt-2">${formatCurrency(item.price)}</p>
+              <p class="text-sm text-gray-300 mt-1">Quantity: ${item.quantity}</p>
             </div>
-            <button class="text-red-400 hover:text-red-300 px-3 py-2 hover:bg-red-900/20 rounded transition" onclick="removeFromCart(${item.id})">
+            <button class="mt-3 sm:mt-0 self-start sm:self-center text-red-400 hover:text-red-300 px-3 py-2 hover:bg-red-900/20 rounded transition shrink-0" onclick="removeFromCart('${item.id}')">
               Remove
             </button>
           `;
@@ -2237,10 +2251,10 @@ Every detail is engineered for a serene, cloud-like ride that defines the ultima
     }
 
     // Show cart notification
-    function showCartNotification() {
+    function showCartNotification(message = 'Added to cart! ✓') {
       const notification = document.createElement('div');
       notification.className = 'fixed bottom-20 right-5 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg animate-pulse z-50';
-      notification.textContent = 'Added to cart! ✓';
+      notification.textContent = message;
       document.body.appendChild(notification);
       
       setTimeout(() => {
