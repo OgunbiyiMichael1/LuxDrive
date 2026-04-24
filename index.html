@@ -2150,6 +2150,20 @@ Every detail is engineered for a serene, cloud-like ride that defines the ultima
     // ===== SHOPPING CART FUNCTIONALITY =====
     let cart = JSON.parse(localStorage.getItem('luxdriveCart')) || [];
 
+    function normalizeCart() {
+      let updated = false;
+      cart = cart.map(item => {
+        if (typeof item.quantity !== 'number' || item.quantity < 1) {
+          updated = true;
+          return { ...item, quantity: 1 };
+        }
+        return item;
+      });
+      if (updated) saveCart();
+    }
+
+    normalizeCart();
+
     const cartBtn = document.getElementById('cart-btn');
     const cartModal = document.getElementById('cartModal');
     const closeCartBtn = document.getElementById('closeCartBtn');
@@ -2162,7 +2176,7 @@ Every detail is engineered for a serene, cloud-like ride that defines the ultima
 
     // Update cart count display
     function updateCartCount() {
-      const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+      const totalItems = cart.reduce((sum, item) => sum + (item.quantity || 1), 0);
       cartCount.textContent = totalItems;
     }
 
@@ -2207,7 +2221,7 @@ Every detail is engineered for a serene, cloud-like ride that defines the ultima
 
     // Calculate and display total
     function calculateTotal() {
-      const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+      const total = cart.reduce((sum, item) => sum + item.price * (item.quantity || 1), 0);
       return total;
     }
 
